@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    color: white;
+}
+header>div>span{
+  text-align: center;
+}
+#bg{
+  background-color: #0e0e88;
+}
+header >div>span>h1{
+    color: #0e0e88;
+    font-size:25px;
+}
+#side{
+  width: 25%;
+}
+#side>ul>li{
+  font-size: 16px;
+  color: #0e0e88;
+  list-style-type: none;
+  margin: 7px;
+}
+header >div>span>img{
+  width: 100px;
+  margin-top: 10px;
+}
+header >div>ul{
+  text-align: center;
+  padding: 10px;
+}
+header >div>ul li{
+  display: inline;
+  margin-right: 30px;
+ cursor: pointer;
+}
+header >div>ul>li>span{
+  font-weight: 600;
+}
+header >div>ul>li>a{
+color: white;
+text-decoration: none;
+font-weight: 600;
+}
+
+header >div>ul> li:hover{
+border-bottom: 1px solid white;
+}
+.nav-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  
+  #dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0e0e88;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+  color: white;
+  }
+  
+  #dropdown a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #0e0e88;
+  }
+  
+  #dropdown a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+
+  
+  #hoverer {
+    cursor: pointer;
+  }
+  
+  /* Show the dropdown when either the "Services" link or the dropdown itself is hovered */
+  #hoverer:hover + #dropdown,
+  #dropdown:hover {
+    display: block;
+  }
+  
