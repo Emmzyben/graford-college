@@ -15,6 +15,7 @@ header>div>div>span>h1{
     color: white;
     font-size:28px;
     font-weight: 700;
+    text-shadow: 2px 2px 10px #0e0e88;
 }
 #side{
   width: 25%;
