@@ -22,3 +22,41 @@ function toggleDropdown() {
             menu.style.height = "0px";
             isMenuOpen = false;
         };
+
+
+
+
+        const imageUrls = [
+            'images/airport1.jpg',
+            'images/pic7.jpg',
+            'images/pic2.jpg',
+            'images/pic3.jpg',
+            'images/pic4.jpg',
+            'images/pic6.jpg',
+            'images/pic5.webp',
+        
+        ];
+        
+        let currentIndex = 0;
+        
+        function updateImage() {
+            const rotatingImage = document.getElementById('rotating-image');
+            rotatingImage.src = imageUrls[currentIndex];
+        }
+        
+        function goToPrevious() {
+            currentIndex = currentIndex === 0 ? imageUrls.length - 1 : currentIndex - 1;
+            updateImage();
+        }
+        
+        function goToNext() {
+            currentIndex = (currentIndex + 1) % imageUrls.length;
+            updateImage();
+        }
+        
+        // Automatically rotate images every 3 seconds
+        setInterval(goToNext, 3000);
+        
+        // Initial image update
+        updateImage();
+        

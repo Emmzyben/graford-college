@@ -5,48 +5,59 @@ body{
 header{
     color: white;
 }
-header>div>span{
+header>div>div>span{
   text-align: center;
 }
 #bg{
   background-color: #0e0e88;
 }
-header >div>span>h1{
-    color: #0e0e88;
-    font-size:25px;
+header>div>div>span>h1{
+    color: white;
+    font-size:28px;
+    font-weight: 700;
 }
 #side{
   width: 25%;
 }
 #side>ul>li{
-  font-size: 16px;
-  color: #0e0e88;
+  text-align: center;
+  background-color: #0e0e88;
   list-style-type: none;
-  margin: 7px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 7px;
+  transition: font-size 0.5s;
 }
-header >div>span>img{
+#side>ul>li>a{
+  color: white;
+  text-decoration: none;
+}
+#side>ul>li:hover{
+  font-size: small;
+}
+header>div >div>span>img{
   width: 100px;
   margin-top: 10px;
 }
-header >div>ul{
+header >div>div>ul{
   text-align: center;
   padding: 10px;
 }
-header >div>ul li{
+header>div >div>ul li{
   display: inline;
   margin-right: 30px;
  cursor: pointer;
 }
-header >div>ul>li>span{
+header>div >div>ul>li>span{
   font-weight: 600;
 }
-header >div>ul>li>a{
+header >div>div>ul>li>a{
 color: white;
 text-decoration: none;
 font-weight: 600;
 }
 
-header >div>ul> li:hover{
+header>div >div>ul> li:hover{
 border-bottom: 1px solid white;
 }
 .nav-container {
@@ -130,10 +141,67 @@ aside>span>img{
   margin: 10px;
   display: none;
 }
+#firstUp{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #0e0e88;
+  color: white;
+}
+#firstUp > div{
+  width: 45%;
+}
+#sp{
+  padding-left: 20px;
+}
+
+#second{
+  position: relative;
+  top: -30px;
+  z-index: -1;
+  margin-left: 7%;
+  margin-right: 7%;
+ }
+
+.full-width-image {
+  width:100%;
+  height:400px;
+  border-radius: 5px;
+}
 
 
+
+
+.previous-button,
+.next-button {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.previous-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+#cover{
+  background-image: url(images/pic8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 @media screen and (max-width:600px){
-  aside{
+#firstUp{display: none;} 
+ aside{
     display: block;
   }
   aside>span>img{
@@ -150,4 +218,20 @@ aside>span>img{
   header{
     display: none;
   }
+  #second{
+    margin: 0;
+   }
+  
+   .previous-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 }

@@ -6,44 +6,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div style="display: flex;flex-direction: row;">
-            <span id="side"><img src="images/logo.jpg" alt="logo"  ></span>
-            <span><h1>GRAFORD COLLEGE OF MARITIME AND AVIATION STUDIES</h1></span>
-            <span id="side" style="text-align: left;;">
-                <ul>
-                    <li>Tel1:+234 (0) 8067333223</li>
-                    <li>Tel2:+234 (0) 8098883608</li>
-                    <li>Email: grafcomas@gmail.com</li>
-                </ul>
-            </span>
+    <header id="cover">
+      <div style="background-color: #0e0e8822;">
+        <div id="firstUp">
+          <div><p>Tel1:+234 (0) 8067333223 <span id="sp">Tel2:+234 (0) 8098883608 </span></p></div>
+          <div style="text-align: right;"><p>Email: grafcomas@gmail.com</p></div>
         </div>
-        <div id="bg">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li class="nav-container">
-                   <span id="hoverer">PORTAL LOGIN</span> 
-                    <ul id="dropdown">
-                     <li><a href="admissions.html">ADMISSION PORTAL</a></li> 
-                     <li><a href="student.html">STUDENT PORTAL</a></li> 
-                     <li><a href="staff.html">STAFF PORTAL</a></li> 
-                    </ul>
-                  </li>
-                  <li class="nav-container" >
-                    <span id="hoverer">INFORMATION</span> 
-                     <ul id="dropdown">
-                      <li><a href="certificate">CERTIFICATE VERIFICATION</a></li> 
-                      <li><a href="student.html">ALUMNI</a></li> 
-                     </ul>
-                   </li>
-                <li><a href="study.html">STUDY CENTER</a></li>
-                <li><a href="blog.html">NEWS/BLOG</a></li>
-                <li><a href="register.html">REGISTER</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
+          <div style="display: flex;flex-direction: row;" >
+              <span id="side"><img src="images/logo.jpg" alt="logo"  ></span>
+              <span><h1>GRAFORD COLLEGE OF MARITIME AND AVIATION STUDIES</h1></span>
+              <span id="side" style="text-align:right;">
+                  <ul>
+                    <li><a href="register.html">REGISTER NOW!</a></li>
+                  <li><a href="contact.html">CONTACT US</a></li>
+                  </ul>
+              </span>
+          </div>
+          <div id="bg">
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li class="nav-container">
+                     <span id="hoverer">PORTAL LOGIN</span> 
+                      <ul id="dropdown">
+                       <li><a href="admissions.html">ADMISSION PORTAL</a></li> 
+                       <li><a href="student.html">STUDENT PORTAL</a></li> 
+                       <li><a href="staff.html">STAFF PORTAL</a></li> 
+                      </ul>
+                    </li>
+                    <li class="nav-container" >
+                      <span id="hoverer">INFORMATION</span> 
+                       <ul id="dropdown">
+                         <li><a href="certificate.html">CERTIFICATE VERIFICATION</a></li> 
+                        <li><a href="student.html">ALUMNI</a></li> 
+                       </ul>
+                     </li>
+                  <li><a href="study.html">STUDY CENTER</a></li>
+                  <li><a href="blog.html">NEWS/BLOG</a></li>
+              </ul>
+          </div>
         </div>
-    </header>
+        </header>
     
     <aside style="display: flex;flex-direction: row;">
         <span><img src="images/logo.jpg" alt="logo" ></span>
@@ -82,7 +85,19 @@
     </ul>
 </nav>
 
+<div >
 
+<div id="second" >
+<img
+  src="images/pic1.jpg"
+  alt="Image"
+  class="full-width-image"
+  id="rotating-image"
+/>
+<button class="previous-button" id='button' onclick="goToPrevious()"><</button>
+<button class="next-button" id='button' onclick="goToNext()">></button>
+</div>
+</div>
 
 
 
