@@ -1,0 +1,90 @@
+section{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+section>h1{
+    font-size: 30px;
+}
+section>h2{
+    font-size: 17px;
+}
+body{
+    color: rgb(50, 44, 44);
+}
+footer{
+    padding: 30px;
+    background-color: #0e0e88d6;
+    color: rgb(255, 255, 255);
+}
+#foot{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+}
+#foot>div{
+    width: 23%;
+    margin-right: 20px;
+}
+#foot>div>p>a{
+    color: rgb(229, 210, 210);
+    text-decoration: none;
+}
+#foot>div>p>a:hover{
+    text-decoration: underline;
+}
+#overfoot{
+    background-image: url(images/pic10.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+#move{
+    text-align: center;
+}
+#move>h1{
+    font-size: 25px;
+}#move>h2{
+    font-size: 17px;
+}
+#director{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#director>div{
+    width: 40%;
+    margin: 10px;
+    text-align: center;
+}
+#director>div>img{
+    width: 100%;
+    height: 400px;
+}
+#director>#pic{
+    border: 1px solid grey;
+}
+#pic{
+    background-color: rgb(192, 185, 185);
+}
+#pad{
+    padding: 40px;
+}
+
+@media screen and (max-width:600px){
+    #pad{
+        padding: 20px;
+    }
+    #foot{
+        flex-direction: column;
+    }
+    #foot>div{
+        width: auto;
+    }
+    #director>div{
+        width: auto;
+        margin: 10px;
+    }
+    #director{
+        display: flex;
+        flex-direction: column;
+}}

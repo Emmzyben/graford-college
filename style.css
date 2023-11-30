@@ -39,6 +39,7 @@ header>div>div>span>h1{
 header>div >div>span>img{
   width: 100px;
   margin-top: 10px;
+  margin-left: -50%;
 }
 header >div>div>ul{
   text-align: center;
