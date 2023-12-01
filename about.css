@@ -69,8 +69,47 @@ footer{
 #pad{
     padding: 40px;
 }
-
+#formdiv >div>input{
+margin-left: 20px;
+background-color:#cacaf1d6;
+border: 1px solid rgb(184, 180, 180);
+padding: 7px;
+margin: 5px;
+width: 250px;
+}
+#formdiv >div>label{
+    padding: 7px;
+    margin: 5px; 
+}
+#formdiv >div>label>span{
+    color: rgb(181, 5, 5);
+    font-size: 12px;
+}
+#submit{
+    margin-left: 7.8%;
+}
+#submit>div{
+    margin-bottom: 15px;
+}
+#submit>div>input{
+    background-color: #e94d1c;
+    border: 0px solid rgb(184, 180, 180);
+    padding: 7px;
+    color: white;
+}
+#submit>div>a{
+    text-decoration: none;
+    color: rgb(99, 94, 94);
+    font-size: 15px;
+}
+#submit>div>a:hover{
+    text-decoration:underline;
+    color: red;
+}
 @media screen and (max-width:600px){
+    section>h1{
+        font-size: 20px;
+    }
     #pad{
         padding: 20px;
     }
