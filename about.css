@@ -190,7 +190,7 @@ border-radius: 7px;
 #reg>div>input,select{
     margin: 10px;
     padding: 10px ;
-    width: 400px;
+    width: 300px;
     border-radius: 8px;
     border: 1px solid white;
 }
@@ -208,14 +208,15 @@ border-radius: 7px;
     border: 0px solid white;
 }
 #vocational{
-    display: none;
+    display: none
+    ;
 }
 @media screen and (max-width:600px){
     #reg{
         flex-direction: column;
     }
     #reg>div{
-        width: 100%;
+        width: auto;
         padding: 0;
         text-align: center;
     }
