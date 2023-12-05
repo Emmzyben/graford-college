@@ -60,3 +60,15 @@ function toggleDropdown() {
         // Initial image update
         updateImage();
         
+
+        function vocational(){
+            var open = false;
+            var option= document.getElementById('vocational').style.display;
+            if(option === "none"){
+                 open= true;
+                 document.getElementById('vocational').style.display='block';
+            }else{
+                open =false;
+                document.getElementById('vocational').style.display='none';
+            }
+        }

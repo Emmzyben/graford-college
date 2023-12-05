@@ -177,8 +177,48 @@ border-radius: 7px;
 #write>h1{
     color: #0e0e88;
 }
-
+#reg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#reg>div{
+    width: 45%;
+    padding: 40px;
+    color: white;
+}
+#reg>div>input,select{
+    margin: 10px;
+    padding: 10px ;
+    width: 400px;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+#reg>div>label{
+    margin: 10px;
+    padding: 10px ; 
+}
+#reg>div>button{
+    margin: 10px;
+    padding: 10px;
+    background-color: #e94d1c;
+    color: white;
+    font-size: large;
+    border-radius: 8px;
+    border: 0px solid white;
+}
+#vocational{
+    display: none;
+}
 @media screen and (max-width:600px){
+    #reg{
+        flex-direction: column;
+    }
+    #reg>div{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
     #certificate>div{
         width: auto;
     }
