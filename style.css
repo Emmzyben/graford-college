@@ -121,6 +121,11 @@ border-bottom: 1px solid white;
   text-decoration: none;
   color: white;
 }
+#ul li a:hover{
+  background-color: white;
+  color:#0e0e88;
+  padding: 10px;
+}
 #ul {
   height: 0;
   overflow: hidden;
@@ -138,7 +143,7 @@ border-bottom: 1px solid white;
 aside{
   display: none;
 }
-aside>span>img{
+aside>div>img{
   width: 70px;
   margin: 10px;
   display: none;
@@ -205,8 +210,10 @@ aside>span>img{
 #firstUp{display: none;} 
  aside{
     display: block;
+  display: flex;flex-direction: row;
   }
-  aside>span>img{
+ 
+  aside>div>img{
     width: 70px;
     margin: 10px;
     display: block;
