@@ -142,6 +142,7 @@ border-bottom: 1px solid white;
 }
 aside{
   display: none;
+  position: sticky;top: 0;background-color: white;
 }
 aside>div>img{
   width: 70px;
