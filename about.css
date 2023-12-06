@@ -211,7 +211,16 @@ border-radius: 7px;
     display: none
     ;
 }
+
+#schools{
+    width: 100%;
+    height: 400px;
+    margin-top: -20px;
+}
 @media screen and (max-width:600px){
+    #schools{
+        display: none;
+    }
     #reg{
         flex-direction: column;
     }
