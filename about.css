@@ -217,7 +217,19 @@ border-radius: 7px;
     height: 400px;
     margin-top: -20px;
 }
+#skull>div>h1,h2{
+    color: #0e0e88;
+    border-left: 5px solid orangered;
+    padding-left: 10px;
+}
+#skull>div>p>b{
+    color: orangered;
+}
+
 @media screen and (max-width:600px){
+        #skull>div>h1{
+            border-left: 0px solid orangered;  
+        }
     #schools{
         display: none;
     }
