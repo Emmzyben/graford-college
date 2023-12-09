@@ -208,8 +208,7 @@ border-radius: 7px;
     border: 0px solid white;
 }
 #vocational{
-    display: none
-    ;
+    display: none;
 }
 
 #schools{
@@ -223,10 +222,64 @@ border-radius: 7px;
     padding-left: 10px;
 }
 #skull>div>p>b{
-    color: orangered;
+    background-color: #0e0e88;
+    color: white;
+    padding: 10px;
 }
-
+#home{
+    display: flex;flex-direction: row;justify-content: center;
+    flex-wrap: wrap;
+    
+}
+#home>div{
+    width: 42%;
+    margin: 20px;
+}
+#home>div>p{
+    font-size: 17px;
+}
+#home>div>h1{
+    font-size: 40px;
+    color: orangered;
+    text-shadow: 1px 1px 5px #0e0e88;
+}
+#line{
+    width:250px;
+    height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#div>div{
+    width:250px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #0e0e88;
+    color: white;
+    font-size: large;
+    font-weight: 900;
+    text-align: center;
+}
+#ad{
+    text-align: center;
+    background-color:#0e0e88a1;
+    color: white;
+    margin-bottom: 30px;
+    padding: 70px;
+}
+#ad>a:hover{
+    background-color: orangered;
+}
 @media screen and (max-width:600px){
+    #line{
+        width:100%;
+    } 
+         
+    #div>div{
+        width: 100%;
+    }
+    #home>div{
+        width: 100%;
+    }
         #skull>div>h1{
             border-left: 0px solid orangered;  
         }

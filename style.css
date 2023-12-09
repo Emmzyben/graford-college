@@ -68,6 +68,7 @@ border-bottom: 1px solid white;
 .nav-container {
     position: relative;
     display: inline-block;
+    
   }
   
   
@@ -95,6 +96,7 @@ border-bottom: 1px solid white;
     display: block;
     font-weight: 600;
     padding-bottom: 10px;
+    
   }
 
   
@@ -106,6 +108,7 @@ border-bottom: 1px solid white;
   #hoverer:hover + #dropdown,
   #dropdown:hover {
     display: block;
+    transition: 2s;
   }
   #ul{
     background-color: #0e0e88;
