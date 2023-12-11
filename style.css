@@ -4,6 +4,11 @@ body{
 }
 body {
   font-family: 'Inter';
+  background-image: url(images/w);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backface-visibility: visible;
 }
 header{
     color: white;

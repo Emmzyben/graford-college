@@ -244,20 +244,24 @@ border-radius: 7px;
     text-shadow: 1px 1px 5px #0e0e88;
 }
 #line{
-    width:250px;
+    width:280px;
     height: 250px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 #div>div{
-    width:250px;
-    margin: 20px;
-    border-radius: 20px;
+    width:280px;
+    margin: 10px;
+    border-radius: 10px;
     background-color: #0e0e88;
     color: white;
     font-size: large;
     font-weight: 900;
     text-align: center;
+    transition: box-shadow 0.3s;
+}
+#div>div:hover{
+    box-shadow: 5px 5px 20px #0e0e88;
 }
 #ad{
     text-align: center;
@@ -270,6 +274,9 @@ border-radius: 7px;
     background-color: orangered;
 }
 @media screen and (max-width:600px){
+    #skull>div>p>b{
+        font-size:15px;
+    }
     #line{
         width:100%;
     } 
