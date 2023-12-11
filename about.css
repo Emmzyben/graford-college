@@ -153,6 +153,11 @@ border-radius: 7px;
     border-radius: 7px;
   padding: 20px;
 }
+#i{
+    color:#0e0e88;
+    margin-right: 10px;
+    font-size: 20px;
+}
 #certificate{
     display:flex;
     flex-direction: row;
@@ -272,6 +277,11 @@ border-radius: 7px;
 }
 #ad>a:hover{
     background-color: orangered;
+}
+
+#inUl > li> ul> li{
+padding: 10px;
+list-style-type: square;
 }
 @media screen and (max-width:600px){
     #skull>div>p>b{

@@ -5,15 +5,17 @@
         <title>SCHOOL OF VOCATIONAL TRAINING/REHABILITATION</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="about.css">
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
 </head>
     <body>
     <header id="cover">
      <div style="background-color: #0e0e8822;">
-          <div id="firstUp">
-            <div><p>Tel1:+234 (0) 8067333223 <span id="sp">Tel2:+234 (0) 8098883608 </span></p></div>
-            <div style="text-align: right;"><p>Email: grafcomas@gmail.com</p></div>
-          </div>
+      <div id="firstUp">
+        <div><p><i class="fa fa-phone-square"></i> +234 (0) 8067333223 <span id="sp"><i class="fa fa-phone-square"></i> +234 (0) 8098883608 </span></p></div>
+        <div style="text-align: right;"><p><i class="fa fa-share-square-o"></i> grafcomas@gmail.com</p></div>
+      </div>
             <div style="display: flex;flex-direction: row;">
                 <span id="side"><img src="images/logo.jpg" alt="logo"  ></span>
                  <span><h1>GRAFORD COLLEGE OF MARITIME & AVIATION STUDIES</h1></span>
@@ -97,14 +99,26 @@
     
     
      <div style="padding-left: 20px;padding-right: 20px;"  id="skull">
-     
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('#inUl li').contents().filter(function() {
+            return this.nodeType === 3; // Filter text nodes
+          }).each(function() {
+            var amountRegex = /([\d.,]+(?:m)?)/g; // Regular expression to match amount numbers
+            var replacedText = this.nodeValue.replace(amountRegex, '<span style="color:orangered">$1</span>');
+            $(this).replaceWith(replacedText);
+          });
+        });
+      </script>
+  </script>
         <div>
             <h2>SCHOOL OF VOCATIONAL TRAINING/REHABILITATION</h2>
           <p>We provide a professional skill developmental and rehabilitation training on the following:</p>
-          <ul>
+          <ul id="inUl">
             <li>MARINE CAPTAIN & QUARTERMASTER MASTER
               <ul>
-                <li>Basic Class 800,000</li>
+                <li>Basic Class 800,000s</li>
                 <li>Advance Class 1.5m (Physical Class Only)</li>
               </ul>
             </li>
@@ -134,9 +148,9 @@
           
             <li>HSE LEVELS 1, 2 & 3
               <ul>
-                <li>Level 1. 45,000 (Physical/Online Class)</li>
-                <li>Level 2. 65,000 (Physical/Online Class)</li>
-                <li>Level 3. 78,000 (Physical/Online Class)</li>
+                <li>Level <span style="color: black;">1.</span>  45,000 (Physical/Online Class)</li>
+                <li>Level <span style="color: black;"> 2.</span> 65,000 (Physical/Online Class)</li>
+                <li>Level <span style="color: black;">3.</span>  78,000 (Physical/Online Class)</li>
               </ul>
             </li>
           
@@ -296,9 +310,9 @@
           
           <div>
             <h3>CONTACT</h3>
-            <p>+234 (0) 8067333223</p>
-            <p>+234 (0) 8098883608 </p>
-            <p>grafcomas@gmail.com</p>
+            <p><i class="fa fa-share-square-o"></i> grafcomas@gmail.com</p>
+            <p><i class="fa fa-phone-square" ></i> +234 (0) 8067333223</p>
+            <p><i class="fa fa-phone-square" ></i> +234 (0) 8098883608</p>
           </div>
           </div>
           

@@ -4,7 +4,7 @@ body{
 }
 body {
   font-family: 'Inter';
-  background-image: url(images/w);
+  background-image: url(images/cover.avif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -169,6 +169,7 @@ aside>div>img{
 }
 #firstUp > div{
   width: 45%;
+  font-size: 15px;
 }
 #sp{
   padding-left: 20px;
