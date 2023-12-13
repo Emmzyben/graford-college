@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+  <div id="show">
+        <div id="side">
+            <div style="display: flex;flex-direction: row;margin: 10px;">
+             <span><img src="images/logo.jpg" alt="logo" width="70px" style="border-radius: 50px;"></span>
+            <span style="padding-left: 10px;"><h3>GRAF-COMAS</h3></span>
+            </div>
+            <div style="text-align: center;"><p>Admin Tools</p></div>
+            <hr>
+            <ul>
+                <li onclick="open1()" id="link1">Dashboard</li>
+                <li onclick="open2()" id="link2">School Overview</li>
+                <li onclick="open3()" id="link3">Staff</li>
+                <li onclick="open4()" id="link4">News/blog</li>
+                <li onclick="open5()" id="link5">Alumni</li>
+                <li onclick="open6()" id="link6">Study Center</li>
+            </ul>
+        </div>
+    <div id="aside">
+        <div style="width: 22%;"><h1>hi</h1></div>
+        <div style="width: 77%;">
+<div id="div1">
+<div id="inner">
+    <div> 
+       <div id="span">
+        <span id="in"></span>
+       <span> <p>Total Students</p></span>
+    </div>
+       <div id="number">
+        <h1>200</h1>
+       </div>
+    </div>
+
+    <div>
+        <div id="span">
+            <span id="in" ></span>
+           <span> <p>Total Revenue</p></span>
+    </div>
+    <div  id="number">
+        <h1><span>$</span>30,000</h1>
+       </div>
+</div>
+</div>
+
+<div style="background-color: white;margin: 40px;height: 450px;width: auto;">
+    <div id="span">
+        <span id="in" ></span>
+       <span> <p>Student Summary</p></span>
+</div>
+</div>
+
+</div>
+
+
+<div id="div2" class="hide">
+<h2>2</h2>
+</div>
+
+
+<!-- Staff page -->
+<div id="div3" class="hide">
+    <div id="inner" style="flex-direction: column;">
+        <div style="width: auto;"> 
+           <div id="span">
+            <span id="in"></span>
+           <span> <p>Total Staff</p></span>
+        </div>
+           <div id="number">
+            <h1>200</h1>
+           </div>
+        </div>
+     
+        <div style="width: auto;">
+   <form action="" id="form1">
+    <label for="">Enter Staff Details: (Note: Submitting this form will save and post this to the staff page) </label><br>
+<input type="text" name="staffName" id="" placeholder="Staff Full Name"><br>
+<input type="text" name="position" id="" placeholder="Position"><br>
+<input type="text" name="address" id="" placeholder="Address"><br>
+<input type="number" name="phone" id="" placeholder="Phone Number"><br>
+<input type="text" name="salary" id="" placeholder="Salary"><br>
+<input type="number" name="accountNumber" id="" placeholder="Account Number"><br>
+<input type="text" name="bank" id="" placeholder="Bank Name"><br>
+<label for="">Staff Picture</label><br>
+<input type="file" name="picture" id=""><br>
+<button type="button">Submit</button>
+   </form>
+    </div>
+    </div>
+    
+    <div style="background-color: white;margin: 20px;height: 450px;width: auto;">
+        <div id="span">
+            <span id="in" ></span>
+           <span> <p>Staff Summary</p></span>
+    </div>
+
+
+
+    </div>
+</div>
+
+<!-- post page -->
+<div id="div4" class="hide">
+    <div id="inner" style="flex-direction: column;">
+  <div style="width: auto;">
+    <form action="" id="form1">
+        <label for="">Make a blog post: </label><br>
+    <input type="text" name="staffName" id="" placeholder="Post Title"><br>
+   <textarea name="" id="" cols="30" rows="10" placeholder="Write here"></textarea>
+    <label for="">Attach picture</label><br>
+    <input type="file" name="picture" id=""><br>
+    <button type="button">Submit</button>
+       </form>
+    </div>  
+</div >
+</div>
+
+<!-- Alumni Page -->
+<div id="div5" class="hide">
+    <div id="inner" style="flex-direction: column;">
+        <div style="width: auto;"> 
+           <div id="span">
+            <span id="in"></span>
+           <span> <p>Total Alumni</p></span>
+        </div>
+           <div id="number">
+            <h1>200</h1>
+           </div>
+        </div>
+     
+        <div style="width: auto;">
+   <form action="" id="form1">
+    <label for="">Enter Student Mat number and graduation year to add </label><br>
+<input type="text" name="matnumber" id="" placeholder="Matriculation number"><br>
+<label for="">Graduation Year</label><br>
+<input type="date" name="graduationYear" id="" ><br>
+<label for="">Attach Student Picture</label><br>
+<input type="file" name="picture" id=""><br>
+<button type="button">Submit</button>
+   </form>
+    </div>
+    </div>
+    
+    <div style="background-color: white;margin: 20px;height: 450px;width: auto;">
+        <div id="span">
+            <span id="in" ></span>
+           <span> <p>Alumni Summary</p></span>
+    </div>
+
+
+
+    </div>
+</div>
+
+<div id="div6" class="hide">
+    <div id="inner" style="flex-direction: column;">
+        <div style="width: auto;">
+          <form action="" id="form1">
+              <label for="">Make a blog post: </label><br>
+          <input type="text" name="staffName" id="" placeholder="Post Title"><br>
+         <textarea name="" id="" cols="30" rows="10" placeholder="Write here"></textarea>
+          <label for="">Attach media</label><br>
+          <input type="file" name="picture" id=""><br>
+          <button type="button">Submit</button>
+             </form>
+          </div>  
+      </div>
+</div>
+</div>
+    </div>
+   </div>     
+
+<div id="noshow">
+    <h1>This Page can only be viewed in a computer</h1>
+    <p>Pls log in with your computer</p>
+</div>
+    <script src="javascript.js"></script>
+</body>
+</html>

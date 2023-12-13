@@ -240,6 +240,9 @@ aside>div>img{
     margin: 0;
    }
   
+.full-width-image {
+  border-radius: 20px;
+}
    .previous-button,
 .next-button {
   position: absolute;
@@ -252,4 +255,10 @@ aside>div>img{
   border-radius: 5px;
   cursor: pointer;
 }
+}
+
+#open{
+  overflow: hidden;
+  transition: height 1s;
+  height: 0px;
 }
