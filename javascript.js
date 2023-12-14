@@ -108,6 +108,11 @@ function toggleDropdown() {
                                     document.getElementById('link6').style.color='#0e0e88';
                                 }
          
+
+
+                                
+
+                                
             function terminate(){
                 document.getElementById('div1').style.display='none';
                 document.getElementById('div2').style.display='none'; 
