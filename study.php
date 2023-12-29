@@ -1,3 +1,31 @@
+<?php
+$servername = 'localhost';
+$username = "root";
+$password = "";
+$database = "graford";
+
+// Create a database connection
+$connection = mysqli_connect($servername, $username, $password, $database);
+
+// Check the connection
+if (!$connection) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+// Modify the SQL query to retrieve posts sorted by the latest post
+$sql = "SELECT * FROM posts ORDER BY created_at DESC";
+
+
+// Execute the query
+$result = mysqli_query($connection, $sql);
+
+// Check if there are results
+if (!$result) {
+    die("Query failed: " . mysqli_error($connection));
+}
+
+// Rest of your code to display the posts...
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +35,48 @@
     <link rel="stylesheet" href="about.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+<style>
+  .post-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+         margin-left:-20px;
+        }
+        #cool{
+          padding: 10px;
+          padding-right:20px;
+          color: black;
+        }
+        #cooler{
+          margin-bottom: 30px;
+        }
+        #color{
+          color:#0e0e88;
+        }
+        #img {
+            max-width: 500px;
+            max-height: 300px;
+        }
+        ul li{
+  list-style-type: none;
 
+}
+#topper{
+  margin-top: 20px;
+  background-color:  #0e0e88;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size:20px;
+}
+@media screen and (max-width:800px) {
+  #img{
+    width:100%;
+  }
+  
+}
+</style>
 </head>
 <body>
  <header id="cover">
@@ -21,7 +90,7 @@
              <span><h1>GRAFORD COLLEGE OF MARITIME & AVIATION STUDIES</h1></span>
             <span id="side" style="text-align:right;">
                 <ul>
-                  <li><a href="register.html">REGISTER NOW!</a></li>
+                  <li><a href="register.php">REGISTER NOW!</a></li>
                  <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </span>
@@ -34,7 +103,7 @@
                      <ul id="dropdown">
                       <li><a href="about.html">ABOUT US</a></li> 
                       <li><a href="director.html">DIRECTOR PROFILE</a></li> 
-                      <li><a href="staff.html">STAFF</a></li>
+                      <li><a href="staff.php">STAFF</a></li>
                      </ul>
                    </li>
                    <li class="nav-container">
@@ -44,7 +113,7 @@
                             <li><a href="aviation.html">SCHOOL OF AVIATION</a></li>
                             <li><a href="diving.html">SCHOOL OF DIVING</a></li>
                             <li><a href="engineering.html">SCHOOL OF ENGINEERING</a></li>
-                            <li><a href="maritime.html">SCHOOL OF MARITIME TRANSPORT BUSINESS & TECHNOLOGY</a></li>
+                            <li><a href="maritime.html">SCHOOL OF MARITIME TRANSPORT & BUSINESS TECHNOLOGY</a></li>
                             <li><a href="food-science.html">SCHOOL OF FOOD SCIENCE</a></li>
                             <li><a href="training.html">SCHOOL OF VOCATIONAL TRAINING/REHABILITATION</a></li>
                   
@@ -62,38 +131,105 @@
                        <ul id="dropdown">
                          <li><a href="certificate.html">CERTIFICATE VERIFICATION</a></li> 
                         <li><a href="alumni.html">ALUMNI</a></li> 
-                        <li><a href="blog.html">NEWS/BLOG</a></li>
+                        <li><a href="blog.php">NEWS/BLOG</a></li>
                        </ul>
                      </li>
-                  <li><a href="study.html">STUDY CENTER</a></li>
+                  <li><a href="study.php">STUDY CENTER</a></li>
               </ul>
           </div>
     </header>
     
-     <aside >
+    <aside >
         <div style="width: 20%;"><img src="images/logo.jpg" alt="logo" ></div>
         <div style="text-align: center;padding-top: 15px;color: #0e0e88;padding-left: 20px;"><h3>GRAF-COMAS</h3></div>
-        <div  id="span" onclick="toggleMenu()">&#9776;</div>
+        <div  id="span" onclick="openNav()" style="cursor: pointer;">&#9776;</div>
     </aside>
 
 <nav>
-    <ul id="ul" style="text-align: center;">
-        <li><a href="index.html">HOME</a></li>
-                      <li><a href="about.html">ABOUT US</a></li> 
-                      <li><a href="director.html">DIRECTOR PROFILE</a></li>
-            <li><a href="admissions.html">ADMISSION PORTAL</a></li> 
-            <li><a href="student.html">STUDENT PORTAL</a></li> 
-            <li><a href="staff.html">STAFF PORTAL</a></li> 
-             <li><a href="certificate.html">CERTIFICATE VERIFICATION</a></li> 
-                <li><a href="alumni.html">ALUMNI</a></li> 
-            <li><a href="study.html">STUDY CENTER</a></li>
-            <li><a href="blog.html">NEWS/BLOG</a></li>
-            <li><a href="register.html">REGISTER</a></li>
-            <li><a href="contact.html">CONTACT</a></li> 
-            
-    </ul>
+    <div id="mySidenav" class="sidenav">
+
+      <img src="images/logo.jpg" alt="" id="img"><hr>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="director.html">Director Profile</a>
+      <a class="dropdown-item" onclick="toggleDropdown()" style="  background-color:#0e0e88;
+      color: #fff;">
+       Schools +
+          <div class="sub-menu1" style="display: none;transition: 0.5s;background-color: #d3e4ee;
+          color: #fff;">
+            <a href="nautical.html">School of Nautical Studies</a>
+            <a href="aviation.html">School Of Aviation</a>
+            <a href="diving.html"> School Of Diving </a>
+            <a href="engineering.html">School Of Engineering </a>
+            <a href="maritime.html">School Of Maritime Transport & Business Technology </a>
+            <a href="food-science.html">School Of Food Science</a>
+            <a href="training.html">School Of Vocational Training/Rehabilitation</a>
+  
+          </div>
+        </a>
+     
+        <script>
+          function toggleDropdown() {
+            const subMenu = document.querySelector('.sub-menu1');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+          }
+        </script>
+      <a href="admissions.html">Admission Portal</a>
+      <a href="student.html">Student Portal</a>
+      <a href="staff.php">Staff Portal</a>
+      <a href="certificate.html">Certificate Verification</a>
+      <a href="alumni.html">Alumni</a>
+      <a href="study.php">Study Center</a>
+      <a href="blog.php">News/blog</a>
+      <a href="register.php">Register</a>
+      <a href="contact.html">Contact</a> 
+    </div>
+    <script>
+      
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
+
+  var open = false;
+
+function openNav() {
+    var sideNav = document.getElementById("mySidenav");
+    
+    if (sideNav.style.width === "0px" || sideNav.style.width === "") {
+        sideNav.style.width = "250px";
+        open = true;
+    } else {
+        sideNav.style.width = "0";
+        open = false;
+    }
+}
+    </script>
 </nav>
 
+<div class="post-container"> 
+  <h1 id="topper">Study articles and materials</h1>
+  <ul>
+      <?php
+      while ($row = mysqli_fetch_assoc($result)) {
+          echo "<li  id='cool'>";
+          echo "<div id='cooler'>";
+          echo "<h1 id='color'><b>" . $row['postTitle'] . "</b></h1>";
+          echo "<p>" . $row['postContent'] . "</p>";
+          echo "</div>";
+          if (!empty($row['picture_path'])) {
+              echo "<img src='" . $row['picture_path'] . "' alt='Post Image' id='img'>";
+          }
+          echo "<p>Posted on: " . $row['created_at'] . "</p>"; 
+          echo "</li>";
+      }
+      ?>
+  </ul>
+</div>
+
+<?php
+// Close the database connection
+mysqli_close($connection);
+?>
 
 
 
@@ -130,7 +266,7 @@
 
 <div>
 <h3>INFORMATION CENTER</h3>
-<p><a href="blog.html">News and Blog</a></p>
+<p><a href="blog.php">News and Blog</a></p>
 <p><a href="certificate.html">Certificate Verification</a></p>
 <p><a href="alumni.html">Alumni page</a></p>
 </div>
