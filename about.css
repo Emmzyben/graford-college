@@ -218,6 +218,7 @@ border-radius: 7px;
 }
 
 
+
 #skull>div>h1,h2{
     color: #0e0e88;
     border-left: 5px solid orangered;
@@ -262,6 +263,7 @@ border-radius: 7px;
     text-align: center;
     transition: box-shadow 0.3s;
     box-shadow: 2px 2px 10px #0e0e88;
+    box-shadow: 2px 2px 10px #0e0e88;
 }
 #div>div:hover{
     box-shadow: 5px 5px 20px #0e0e88;
@@ -283,6 +285,8 @@ list-style-type: square;
 }
 
 
+
+
 @media screen and (max-width:600px){
     #skull>div>p>b{
         font-size:15px;
@@ -300,6 +304,7 @@ list-style-type: square;
         #skull>div>h1{
             border-left: 0px solid orangered;  
         }
+
 
     #reg{
         flex-direction: column;

@@ -122,6 +122,130 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 
+<?php
+$DATABASE_HOST = 'localhost';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = '';
+$DATABASE_NAME = 'graford';
+
+$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+if (mysqli_connect_errno()) {
+    exit('Failed to connect to MySQL: ' . mysqli_connect_error());
+}
+
+$errorMessage = ''; // Variable to store error messages
+$successMessage = ''; // Variable to store success message
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $requiredFields = [
+        'fullName',
+        'hometown',
+        'lga',
+        'state',
+        'nationality',
+        'dateOfbirth',
+        'email',
+        'schools',
+        'Vocational',
+        'phone',
+        'address',
+        'MaritalStatus',
+        'religion',
+        'qualification'
+    ];
+
+    foreach ($requiredFields as $field) {
+        if (!isset($_POST[$field]) || empty($_POST[$field])) {
+            $errorMessage .= "Field '$field' is missing or empty. ";
+        }
+    }
+
+    // Function to validate and move an uploaded image
+    function validateAndMoveImage($fileInputName, $allowedExtensions, $maxFileSize, $destinationDirectory)
+    {
+        $errorMsg = '';
+
+        if (!isset($_FILES[$fileInputName]['error']) || $_FILES[$fileInputName]['error'] !== UPLOAD_ERR_OK) {
+            $errorMsg = 'Failed to upload ' . $fileInputName . '. Please try again.';
+        } else {
+            $tempFilePath = $_FILES[$fileInputName]['tmp_name'];
+            $fileExtension = pathinfo($_FILES[$fileInputName]['name'], PATHINFO_EXTENSION);
+            $fileSize = $_FILES[$fileInputName]['size'];
+
+            if (!in_array(strtolower($fileExtension), $allowedExtensions)) {
+                $errorMsg = 'Invalid file format for ' . $fileInputName . '. Allowed formats: JPG, JPEG, PNG, GIF.';
+            } elseif ($fileSize > $maxFileSize) {
+                $errorMsg = 'File size exceeds the allowed limit (2MB) for ' . $fileInputName . '.';
+            } elseif (!move_uploaded_file($tempFilePath, $destinationDirectory . $_FILES[$fileInputName]['name'])) {
+                $errorMsg = 'Failed to move uploaded ' . $fileInputName . ' to the directory.';
+            }
+        }
+
+        return $errorMsg;
+    }
+
+    // Image upload validation for passport
+    $passportErrorMsg = validateAndMoveImage('passport', ['jpg', 'jpeg', 'png', 'gif'], 2 * 1024 * 1024, 'uploads/');
+
+    if ($passportErrorMsg !== '') {
+        $errorMessage .= $passportErrorMsg;
+    }
+
+    // Image upload validation for identification
+    $identificationErrorMsg = validateAndMoveImage('Identification', ['jpg', 'jpeg', 'png', 'gif'], 2 * 1024 * 1024, 'uploads/');
+
+    if ($identificationErrorMsg !== '') {
+        $errorMessage .= $identificationErrorMsg;
+    }
+
+    if ($errorMessage === '') {
+      // Generate matriculation number: U + present year + random number
+      $matriculationNumber = 'U' . date('Y') . '/' . mt_rand(1000, 9999);
+
+      // Generate exam number: 7 random numbers + 3 random letters
+      $examNumber = mt_rand(1000000, 9999999) . substr(str_shuffle('ABCDEFGHIJKLMNOPQRSTUVWXYZ'), 0, 3);
+
+      $stmt = $con->prepare('INSERT INTO accounts (fullName, hometown, lga, state, nationality, dateOfbirth, email, schools, Vocational, phone, address, MaritalStatus, religion, qualification, passport_image_path, identification_image_path, matriculationNumber, examNumber) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+// Assign file paths to variables
+        $passportImagePath = 'uploads/' . $_FILES['passport']['name'];
+        $identificationImagePath = 'uploads/' . $_FILES['Identification']['name'];
+
+        // Bind parameters by reference
+        $bindResult = $stmt->bind_param(
+          'ssssssssssssssssss',
+          $_POST['fullName'],
+          $_POST['hometown'],
+          $_POST['lga'],
+          $_POST['state'],
+          $_POST['nationality'],
+          $_POST['dateOfbirth'],
+          $_POST['email'],
+          $_POST['schools'],
+          $_POST['Vocational'],
+          $_POST['phone'],
+          $_POST['address'],
+          $_POST['MaritalStatus'],
+          $_POST['religion'],
+          $_POST['qualification'],
+          $passportImagePath,
+          $identificationImagePath,
+          $matriculationNumber,
+          $examNumber 
+      );
+
+
+      if ($stmt->execute()) {
+        $successMessage = 'Registration successful. We will send you an email shortly';
+    } else {
+        $errorMessage .= 'Registration failed, please try again';
+    }
+
+    $stmt->close();
+}
+}
+?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -159,6 +283,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                       <li><a href="about.html">ABOUT US</a></li> 
                       <li><a href="director.html">DIRECTOR PROFILE</a></li> 
                       <li><a href="staff.php">STAFF</a></li>
+                      <li><a href="staff.php">STAFF</a></li>
                      </ul>
                    </li>
                    <li class="nav-container">
@@ -168,6 +293,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <li><a href="aviation.html">SCHOOL OF AVIATION</a></li>
                             <li><a href="diving.html">SCHOOL OF DIVING</a></li>
                             <li><a href="engineering.html">SCHOOL OF ENGINEERING</a></li>
+                            <li><a href="maritime.html">SCHOOL OF MARITIME TRANSPORT & BUSINESS TECHNOLOGY</a></li>
                             <li><a href="maritime.html">SCHOOL OF MARITIME TRANSPORT & BUSINESS TECHNOLOGY</a></li>
                             <li><a href="food-science.html">SCHOOL OF FOOD SCIENCE</a></li>
                             <li><a href="training.html">SCHOOL OF VOCATIONAL TRAINING/REHABILITATION</a></li>
@@ -190,14 +316,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                        </ul>
                      </li>
                   <li><a href="study.php">STUDY CENTER</a></li>
+                  <li><a href="study.php">STUDY CENTER</a></li>
               </ul>
           </div>
     </div>
 </header>
     
 <aside >
+<aside >
         <div style="width: 20%;"><img src="images/logo.jpg" alt="logo" ></div>
         <div style="text-align: center;padding-top: 15px;color: #0e0e88;padding-left: 20px;"><h3>GRAF-COMAS</h3></div>
+        <div  id="span" onclick="openNav()" style="cursor: pointer;">&#9776;</div>
         <div  id="span" onclick="openNav()" style="cursor: pointer;">&#9776;</div>
     </aside>
 
@@ -275,6 +404,16 @@ function openNav() {
         }
     ?>
   <form action="" method="post" enctype="multipart/form-data">
+  <?php
+        if ($errorMessage !== '') {
+            echo '<div style="color: white;text-align:center">' . $errorMessage . '</div>';
+        }
+
+        if ($successMessage !== '') {
+            echo '<div style="color: white;text-align:center">' . $successMessage . '</div>';
+        }
+    ?>
+  <form action="" method="post" enctype="multipart/form-data">
    
   <div style="height: auto;" id="reg">
  
@@ -294,11 +433,15 @@ function openNav() {
       <option value="School Of Diving">School Of Diving</option>
       <option value="School Of Of Engineering">School Of Engineering</option>
       <option value="School of maritime transport & business technology">School of Maritime Transport & Business Technology</option>
+      <option value="School of maritime transport & business technology">School of Maritime Transport & Business Technology</option>
       <option value="School Of Food Science">School Of Food Science</option>
+      <option value="School of vocational training/rehabilitation">School of Vocational Training/Rehabilitation</option>
       <option value="School of vocational training/rehabilitation">School of Vocational Training/Rehabilitation</option>
     </select><br>
 <label for="" style="font-weight: bolder;">For school of vocational training/rehabilitation, choose your field of training <span style="color:yellow">(Note: Ignore if you are not registering for school of vocational training/Rehabilitation)</span> </label><br>
+<label for="" style="font-weight: bolder;">For school of vocational training/rehabilitation, choose your field of training <span style="color:yellow">(Note: Ignore if you are not registering for school of vocational training/Rehabilitation)</span> </label><br>
 <select name="Vocational">
+  <option value=" ">Select Course</option>
   <option value=" ">Select Course</option>
   <option value="Marine Captain & Quarter Master">Marine Captain & Quarter Master</option>
   <option value="Underwater Diving">Underwater Diving</option>
@@ -325,6 +468,8 @@ function openNav() {
   <option value="Rope Access Control">Rope Access Control</option>
   <option value="Scaffolding">Scaffolding</option>
   <option value="Tug Boat Captain,Deckhand & Confined space safty">Tug Boat Captain,Deckhand & Confined space safty</option>
+  <option value="Scaffolding">Scaffolding</option>
+  <option value="Tug Boat Captain,Deckhand & Confined space safty">Tug Boat Captain,Deckhand & Confined space safty</option>
 </select>
 
 </div>
@@ -332,6 +477,22 @@ function openNav() {
 <div>
 <input type="number" name="phone" id="" placeholder="Phone Number"><br>
 <input type="text" name="address" placeholder="Home/Residential Address"><br>
+<label >Marital Status:</label><br>
+<select id="MaritalStatus" name="MaritalStatus"><br>
+<option value="">Select status</option>
+    <option value="single">Single</option>
+    <option value="married">Married</option>
+ </select><br>
+<label >Religion:</label><br>
+<select id="religion" name="religion"><br>
+    <option value="christianity">Christianity</option>
+    <option value="islam">Islam</option>
+    <option value="hinduism">Hinduism</option>
+    <option value="buddhism">Buddhism</option>
+    <option value="judaism">Judaism</option>
+    <option value="sikhism">Sikhism</option>
+    <option value="other">Other</option>
+</select><br>
 <label >Marital Status:</label><br>
 <select id="MaritalStatus" name="MaritalStatus"><br>
 <option value="">Select status</option>
@@ -395,6 +556,7 @@ function openNav() {
 
 <div>
 <h3>INFORMATION CENTER</h3>
+<p><a href="blog.php">News and Blog</a></p>
 <p><a href="blog.php">News and Blog</a></p>
 <p><a href="certificate.html">Certificate Verification</a></p>
 <p><a href="alumni.php">Alumni page</a></p>

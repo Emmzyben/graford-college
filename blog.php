@@ -26,6 +26,34 @@ if (!$result) {
 
 // Rest of your code to display the posts...
 ?>
+<?php
+$servername = 'localhost';
+$username = "root";
+$password = "";
+$database = "graford";
+
+// Create a database connection
+$connection = mysqli_connect($servername, $username, $password, $database);
+
+// Check the connection
+if (!$connection) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+// Modify the SQL query to retrieve posts sorted by the latest post
+$sql = "SELECT * FROM blogposts ORDER BY created_at DESC";
+
+
+// Execute the query
+$result = mysqli_query($connection, $sql);
+
+// Check if there are results
+if (!$result) {
+    die("Query failed: " . mysqli_error($connection));
+}
+
+// Rest of your code to display the posts...
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -90,6 +118,7 @@ if (!$result) {
             <span id="side" style="text-align:right;">
                 <ul>
                   <li><a href="register.php">REGISTER NOW!</a></li>
+                  <li><a href="register.php">REGISTER NOW!</a></li>
                 <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </span>
@@ -103,6 +132,7 @@ if (!$result) {
                   <li><a href="about.html">ABOUT US</a></li> 
                   <li><a href="director.html">DIRECTOR PROFILE</a></li> 
                   <li><a href="staff.php">STAFF</a></li>
+                  <li><a href="staff.php">STAFF</a></li>
                  </ul>
                </li>
                <li class="nav-container">
@@ -112,6 +142,7 @@ if (!$result) {
                             <li><a href="aviation.html">SCHOOL OF AVIATION</a></li>
                             <li><a href="diving.html">SCHOOL OF DIVING</a></li>
                             <li><a href="engineering.html">SCHOOL OF ENGINEERING</a></li>
+                            <li><a href="maritime.html">SCHOOL OF MARITIME TRANSPORT & BUSINESS TECHNOLOGY</a></li>
                             <li><a href="maritime.html">SCHOOL OF MARITIME TRANSPORT & BUSINESS TECHNOLOGY</a></li>
                             <li><a href="food-science.html">SCHOOL OF FOOD SCIENCE</a></li>
                             <li><a href="training.html">SCHOOL OF VOCATIONAL TRAINING/REHABILITATION</a></li>
@@ -134,14 +165,17 @@ if (!$result) {
                    </ul>
                  </li>
               <li><a href="study.php">STUDY CENTER</a></li>
+              <li><a href="study.php">STUDY CENTER</a></li>
           </ul>
       </div>
     </div>
 </header>
     
 <aside >
+<aside >
         <div style="width: 20%;"><img src="images/logo.jpg" alt="logo" ></div>
         <div style="text-align: center;padding-top: 15px;color: #0e0e88;padding-left: 20px;"><h3>GRAF-COMAS</h3></div>
+        <div  id="span" onclick="openNav()" style="cursor: pointer;">&#9776;</div>
         <div  id="span" onclick="openNav()" style="cursor: pointer;">&#9776;</div>
     </aside>
 
@@ -266,6 +300,7 @@ mysqli_close($connection);
 
 <div>
 <h3>INFORMATION CENTER</h3>
+<p><a href="blog.php">News and Blog</a></p>
 <p><a href="blog.php">News and Blog</a></p>
 <p><a href="certificate.html">Certificate Verification</a></p>
 <p><a href="alumni.php">Alumni page</a></p>

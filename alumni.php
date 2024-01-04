@@ -44,6 +44,52 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 
+<?php
+// Database connection details
+$servername = 'localhost';
+$username = "root";
+$password = "";
+$database = "graford";
+
+// Create a connection
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// SQL query to retrieve images and descriptions in descending order
+$sql = "SELECT fullName, courseOfStudy, graduationYear, picturePath FROM alumni";
+$result = $conn->query($sql);
+
+// Generate HTML for displaying images and descriptions
+$html = '';
+
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $fullName = $row['fullName'];
+        $courseOfStudy = $row['fullName'];
+        $graduationYear = $row['graduationYear'];
+        $picture_path = $row['picturePath'];
+
+
+        // Generate HTML for each image and description
+        $html .= '<div class="image-container" style="border:1px solid #e4e4e4;border-radius:10px,">';
+        $html .= '<img src="' . $picture_path . '" style="height: 300px; width: 100%;">';
+        $html .= '<p  style="margin-top:20px;text-align:center"><b> ' . $fullName . '</b></p>';
+        $html .= '<p  style="margin-top:20px;text-align:center"> ' . $courseOfStudy . '</p>';
+        $html .= '<p  style="margin-top:20px;text-align:center"> ' . $graduationYear. '</p>';
+        $html .= '</div>';
+    }
+} else {
+    $html = '<p>No images found.</p>';
+}
+
+// Close the database connection
+$conn->close();
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -54,6 +100,21 @@ $conn->close();
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
+  .image-container{
+    width: 30%;
+    box-shadow:2px 2px 10px gray;
+    margin:10px;
+  }
+  @media screen and (max-width:700px) {
+    .image-container{
+    width: 100%;
+    box-shadow:2px 2px 10px gray;
+    margin:20px;
+  }
+  }
+</style>
+  </head>
     <style>
   .image-container{
     width: 30%;
@@ -82,6 +143,7 @@ $conn->close();
             <span id="side" style="text-align:right;">
                 <ul>
                   <li><a href="register.php">REGISTER NOW!</a></li>
+                  <li><a href="register.php">REGISTER NOW!</a></li>
                 <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </span>
@@ -95,6 +157,7 @@ $conn->close();
                       <li><a href="about.html">ABOUT US</a></li> 
                       <li><a href="director.html">DIRECTOR PROFILE</a></li> 
                       <li><a href="staff.php">STAFF</a></li>
+                      <li><a href="staff.php">STAFF</a></li>
                      </ul>
                    </li>
                    <li class="nav-container">
@@ -104,6 +167,7 @@ $conn->close();
                             <li><a href="aviation.html">SCHOOL OF AVIATION</a></li>
                             <li><a href="diving.html">SCHOOL OF DIVING</a></li>
                             <li><a href="engineering.html">SCHOOL OF ENGINEERING</a></li>
+                            <li><a href="maritime.html"><li><a href="maritime.html">SCHOOL OF MARITIME TRANSPORT & BUSINESS TECHNOLOGY</a></li></a></li>
                             <li><a href="maritime.html"><li><a href="maritime.html">SCHOOL OF MARITIME TRANSPORT & BUSINESS TECHNOLOGY</a></li></a></li>
                             <li><a href="food-science.html">SCHOOL OF FOOD SCIENCE</a></li>
                             <li><a href="training.html">SCHOOL OF VOCATIONAL TRAINING/REHABILITATION</a></li>
@@ -126,14 +190,17 @@ $conn->close();
                        </ul>
                      </li>
                   <li><a href="study.php">STUDY CENTER</a></li>
+                  <li><a href="study.php">STUDY CENTER</a></li>
               </ul>
           </div>
     </div>
 </header>
     
 <aside >
+<aside >
         <div style="width: 20%;"><img src="images/logo.jpg" alt="logo" ></div>
         <div style="text-align: center;padding-top: 15px;color: #0e0e88;padding-left: 20px;"><h3>GRAF-COMAS</h3></div>
+        <div  id="span" onclick="openNav()" style="cursor: pointer;">&#9776;</div>
         <div  id="span" onclick="openNav()" style="cursor: pointer;">&#9776;</div>
     </aside>
 
@@ -206,6 +273,12 @@ function openNav() {
     <?php echo $html; ?>
 </div>
 
+<!-- content -->
+<h1 style="text-align:center">Meet Our Alumni</h1>
+<div class="image-gallery" style="display: flex; flex-direction: row; flex-wrap: wrap;justify-content:space-around">
+    <?php echo $html; ?>
+</div>
+
 
 
 
@@ -240,6 +313,7 @@ function openNav() {
 
 <div>
 <h3>INFORMATION CENTER</h3>
+<p><a href="blog.php">News and Blog</a></p>
 <p><a href="blog.php">News and Blog</a></p>
 <p><a href="certificate.html">Certificate Verification</a></p>
 <p><a href="alumni.php">Alumni page</a></p>
