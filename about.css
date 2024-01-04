@@ -174,6 +174,7 @@ border-radius: 7px;
     border-radius: 10px;
     margin: 10px;
     width: 200px;
+    box-shadow: 2px 2px 10px gray;
 }
 #write{
     padding: 10px;
@@ -216,11 +217,7 @@ border-radius: 7px;
     display: none;
 }
 
-#schools{
-    width: 100%;
-    height: 400px;
-    margin-top: -20px;
-}
+
 #skull>div>h1,h2{
     color: #0e0e88;
     border-left: 5px solid orangered;
@@ -264,6 +261,7 @@ border-radius: 7px;
     font-weight: 900;
     text-align: center;
     transition: box-shadow 0.3s;
+    box-shadow: 2px 2px 10px #0e0e88;
 }
 #div>div:hover{
     box-shadow: 5px 5px 20px #0e0e88;
@@ -283,6 +281,8 @@ border-radius: 7px;
 padding: 10px;
 list-style-type: square;
 }
+
+
 @media screen and (max-width:600px){
     #skull>div>p>b{
         font-size:15px;
@@ -300,9 +300,7 @@ list-style-type: square;
         #skull>div>h1{
             border-left: 0px solid orangered;  
         }
-    #schools{
-        display: none;
-    }
+
     #reg{
         flex-direction: column;
     }
@@ -352,3 +350,44 @@ list-style-type: square;
         display: flex;
         flex-direction: column;
 }}
+
+.divide{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .divide>div{
+    width: auto;
+  }
+  .divide>div>img{
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    box-shadow: 1px 1px 10px rgb(172, 183, 209);
+  }
+  #schools{
+    width: 100%;
+    height: 400px;
+    margin-top: -20px;
+}
+   @media screen and (max-width:800px){
+    .divide>div>img{
+        display: block;
+        width: 90%;
+        margin: 20px;
+      }
+      .divide{
+        display: flex;
+        flex-direction: column;
+      }
+  } 
+
+@media screen and (max-width:700px) {
+  #schools{
+    width: 100%;
+    height: 250px;
+    margin-top: -20px;
+}
+}
+
+
