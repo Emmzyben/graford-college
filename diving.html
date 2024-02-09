@@ -1,0 +1,344 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SCHOOL OF DIVING</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+</head>
+    <body>
+      <header id="cover">
+        <div style="background-color: #0e0e8822;">
+             <div id="firstUp">
+               <div><p><i class="fa fa-phone-square"></i> +234 (0) 8067333223 <span id="sp"><i class="fa fa-phone-square"></i> +234 (0) 8098883608 </span></p></div>
+                <div style="text-align: right;"><p><a style="color: white;text-decoration: none;" href="mailto:support@grafordcollege.com"><i class="fa fa-share-square-o"></i> support@grafordcollege.com</a></p></div>
+             </div>
+               <div style="display: flex;flex-direction: row;">
+                   <span id="side"><img src="images/logo.jpg" alt="logo"  ></span>
+                    <span><h1>GRAFORD COLLEGE OF MARITIME & AVIATION STUDIES</h1></span>
+                   <span id="side" style="text-align:right;">
+                       <ul>
+                       <li><a href="register.php">REGISTER NOW!</a></li>
+                       <li><a href="contact.html">CONTACT US</a></li>
+                       </ul>
+                   </span>
+               </div>
+    
+              </div></header> 
+    
+            
+                 <div id="bg">
+                     <ul>
+                         <li><a href="index.html">HOME</a></li>
+                         <li class="nav-container">
+                           <span id="hoverer">ABOUT</span> 
+                            <ul id="dropdown">
+                             <li><a href="about.html">ABOUT US</a></li> 
+                             <li><a href="director.html">DIRECTOR PROFILE</a></li> 
+                             <li><a href="staff.php">STAFF</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-container">
+                           <span id="hoverer">SCHOOLS</span> 
+                            <ul id="dropdown" style="width: 300px;">
+                               <li><a href="nautical.html">SCHOOL OF NAUTICAL STUDIES</a></li>
+                               <li><a href="aviation.html">SCHOOL OF AVIATION</a></li>
+                               <li><a href="diving.html">SCHOOL OF DIVING</a></li>
+                               <li><a href="engineering.html">SCHOOL OF ENGINEERING</a></li>
+                               <li><a href="maritime.html">SCHOOL OF MARITIME TRANSPORT & BUSINESS TECHNOLOGY</a></li>
+                               <li><a href="food-science.html">SCHOOL OF FOOD SCIENCE</a></li>
+                               <li><a href="training.html">SCHOOL OF VOCATIONAL TRAINING/REHABILITATION</a></li>
+                           <li><a href="agriculture.html">SCHOOL OF AGRICULTURE</a></li>
+                           <li><a href="sciences.html">SCHOOL OF SCIENCES</a></li>
+                     
+                            </ul>
+                          </li>
+       
+                         <li class="nav-container">
+                            <span id="hoverer">PORTAL LOGIN</span> 
+                             <ul id="dropdown">
+                              <li><a href="admissions.php">ADMISSION PORTAL</a></li> 
+                              <li><a href="student.php">STUDENT PORTAL</a></li> 
+                             </ul>
+                           </li>
+                           <li class="nav-container" >
+                             <span id="hoverer">INFORMATION</span> 
+                              <ul id="dropdown">
+                                <li><a href="certificate.php">CERTIFICATE VERIFICATION</a></li> 
+                               <li><a href="alumni.php">ALUMNI</a></li> 
+                               <li><a href="blog.php">NEWS/BLOG</a></li>
+                              </ul>
+                            </li>
+                         <li><a href="study.php">STUDY CENTER</a></li>
+                     </ul>
+                 </div>
+         
+    
+           
+        <aside >
+            <div style="width: 20%;"><img src="images/logo.jpg" alt="logo" ></div>
+            <div style="text-align: center;padding-top: 15px;color: #090970;padding-left: 20px;"><h3>GRAF-COMAS</h3></div>
+            <div  id="span" onclick="openNav()" style="cursor: pointer;">&#9776;</div>
+        </aside>
+    
+    <nav>
+        <div id="mySidenav" class="sidenav">
+    
+          <img src="images/logo.jpg" alt="" id="img"><hr>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="director.html">Director Profile</a>
+          <a class="dropdown-item" onclick="toggleDropdown()" style="  background-color:#0e0e88;
+          color: #fff;">
+           Schools +
+              <div class="sub-menu1" style="display: none;transition: 0.5s;background-color: #d3e4ee;
+              color: #fff;">
+                <a href="nautical.html">School of Nautical Studies</a>
+                <a href="aviation.html">School Of Aviation</a>
+                <a href="diving.html"> School Of Diving </a>
+                <a href="engineering.html">School Of Engineering </a>
+                <a href="maritime.html">School Of Maritime Transport & Business Technology </a>
+                <a href="food-science.html">School Of Food Science</a>
+                <a href="training.html">School Of Vocational Training/Rehabilitation</a>
+                <a href="agriculture.html">School of Agriculture</a>
+                <a href="sciences.html">School of Sciences</a>
+              </div>
+            </a>
+         
+            <script>
+              function toggleDropdown() {
+                const subMenu = document.querySelector('.sub-menu1');
+                subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+              }
+            </script>
+          <a href="admissions.php">Admission Portal</a>
+          <a href="student.php">Student Portal</a>
+          <a href="staff.php">Staff Portal</a>
+          <a href="certificate.php">Certificate Verification</a>
+          <a href="alumni.php">Alumni</a>
+          <a href="study.php">Study Center</a>
+          <a href="blog.php">News/blog</a>
+          <a href="register.php">Register</a>
+          <a href="contact.html">Contact</a> 
+        </div>
+        <script>
+          
+    function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    
+      var open = false;
+    
+    function openNav() {
+        var sideNav = document.getElementById("mySidenav");
+        
+        if (sideNav.style.width === "0px" || sideNav.style.width === "") {
+            sideNav.style.width = "250px";
+            open = true;
+        } else {
+            sideNav.style.width = "0";
+            open = false;
+        }
+    }
+        </script>
+    </nav>
+    
+<img src="images/picc4.jpg" alt="" id="schools" style="object-fit: cover;">
+    
+  <div class="divide">
+    <div style="padding-left: 20px;padding-right: 20px;"  id="skull">
+     
+        <div >
+            <h1>SCHOOL OF DIVING</h1>
+           <p><b>Admission Requirements</b></p> 
+            <p>The minimum entering requirements senior school certificate examination (SSCE) or it's equivalent in not more than 2 sittings.
+            </p>
+            <p>The subjects passed must include:</p>
+            <p>English Language, Mathematics, Physics and geography at credit levels.</p>
+            <p>Candidates must have Basic/Advance Idea in the area of their chosen course before taking the Underwater Diving Practical Training Program
+           </p>
+           <p><b>AGE LIMIT:</b></p> 
+           <p>17-40 Years.</p> 
+          
+          <p>NOTE!!! Candidates are expected to undergo a comprehensive medical examination and swimming test in any of our approved swimming and medical centers.
+          </p> 
+           <div id="imageDiv">
+            <img src="images/picc24.jpg" alt="">
+            <img src="images/picc32.jpg" alt="">
+          </div> 
+          <p><b>COMMERCIAL DIVERS TRAINING</b></p> 
+            <p>Courses include:</p>
+            <ol>
+            <li><b>Commercial diver certification</b></li>
+            <li>
+              <b>Entry level tender/diver certification</b>
+              <ul>
+                <li> indicates that the diver is being trained to the ADCI Consensus Standard for Entry Level Air Tender/Diver, which is the working class certification for commercial divers.
+                  As the diver obtains work experience, their employer may apply to advance the credentials of the working diver to Air Diver, Mixed-Gas Diver, Air-Diving Supervisor, etc.
+                  </li>
+            <li>Nitric mixed-gas diving certification</li> 
+            <li>Indestructible testing certification</li>
+            <li>Diver rigging training</li> 
+            <li>Diver medic trading</li> 
+          </ul>
+          </li>
+          
+           <li>
+           <b>Nitrox Mixed-Gas Diving Certification of Completion</b>
+           <ul>
+            <li> In this specialty elective, students develop their understanding of operating a mixed-gas rack and performing open water nitrox mixed-gas dives according to the Graf-Comas Marchant Navy Dive Manual Revision 9.
+            </li>
+           </ul>
+          </li> 
+           
+            
+           
+           <li>
+            <b>Rigging RP-2D Certificate of Completion</b>
+            <ul><li> indicates the recipient has received training and can perform working knowledge of rigging techniques and procedures.
+            </li></ul>
+           </li> 
+           
+           <li>
+            <b>Non Destructive Testing Certification</b>
+            <ul>
+              <li>  Nondestructive Testing (ASNT) competency standards and can perform entry-level nondestructive testing (NDT) techniques.
+           </li>
+            </ul>
+           </li>
+          
+            
+           <li>
+            <b>Diver Medic Training</b>
+            <ul>
+              <li>This certificate is issued to students who have successfully completed training to prevent, recognize, and provide basic care for injuries and sudden illness until advanced medical personnel arrives.
+            </li>
+            </ul>
+           </li>
+          
+           </ol>
+          
+            <p><b>You need to make the following decisions</b></p>
+            <p>1. Which course do I want to take</p>
+            <p>2. Am I financially capable to undertake the training</p>
+            <p>3. Would I be able to take care of myself for 14 weeks</p>
+            
+           <p>Divers are one of the easiest personnel to get employed in the maritime industry.</p> 
+           <p>Entry level salaries start from USD$1,500 - USD$5,000 as basic per month depending on qualifications.
+          </p>   
+           
+          <p><b>Available Underwater Diving Courses</b></p>
+            <p>Specialty courses on which to hone your scuba skills:</p>
+            <ul>
+              <li>UNDERWATER DIVING</li>
+              <li>UNDERWATER WELDING</li>
+              <li>UNDERWATER INSPECTION</li>
+              <li>UNDERWATER TECHNICIAN</li>
+              <li>UNDERWATER ARCHITECTURE</li>
+              <li>UNDERWATER VIDEOGRAPHY</li>
+              <li>UNDERWATER PHOTOGRAPHY</li>
+              <li>UNDERWATER OPERATOR TRAINING</li>
+              <li>MASTER SCUBA DIVER</li>
+              <li>BOAT DIVER</li>
+              <li>CAVERN DIVER</li>
+              <li>CORAL REEF CONSERVATION</li>
+              <li>DEEP DIVER</li>
+              <li>DIVE PROPULSION VEHICLE</li>
+              <li>DRIFT DIVER</li>
+              <li>ENRICHED AIR NITROX</li>
+              <li>EQUIPMENT SPECIALIST</li>
+              <li>FISH IDENTIFICATION</li>
+              <li>MULTILEVEL & DIVE COMPUTER</li>
+              <li>NIGHT DIVER</li>
+              <li>PEAK PERFORMANCE BUOYANCY</li>
+              <li>PROJECT AWARE</li>
+              <li>EMERGENCY FIRST RESPONSE</li>
+              <li>RESCUE DIVER</li>
+              <li>DIVE MASTER</li>
+              <li>UNDERWATER NATURALISAT</li>
+              <li>UNDERWATER NAVIGATOR</li>
+              <li>UNDERWATER SEARCH AND RECOVERY</li>
+              <li>COMMERCIAL DIVING</li>
+              <li>WRECK DIVER</li>
+            </ul>
+            <br>
+           
+            <p><b>How to make payments</b></p>
+            <p>You can make payments online or manually</p>
+            <p>To pay manually, make a transfer to the school account below and send proof of payment as well as your details to <strong>support@grafordcollege.com</strong></p>
+          <strong> <p>Account Number:1229433888</p>
+           <p>Account Name: GRAFORD COLLEGE OF MARITIME & AVIATION STUDIES</p> 
+            
+            <p>Bank: Zenith Bank PLC</p>
+         </strong>
+          </div>
+    
+        </div>
+       
+  </div>  
+     
+    
+        <div id="overfoot">
+            <footer>
+          <div style="display: flex;flex-direction: row;">
+            <div><img src="images/logo.jpg" alt="logo" width="80px"></div>
+            <div><h3 style="padding: 10px;">GRAF-COMAS</h3></div>
+          </div>
+          <hr>
+          <div id="foot">
+          <div>
+          <h3>ABOUT</h3>
+          <p><a href="about.html">About Us</a></p>
+          <p><a href="director.html">Director Profile</a></p>
+          </div>
+          
+           <div>
+            <h3>SCHOOLS</h3>
+          <p><a href="nautical.html">School Of Nautical Studies</a></p>
+           <p> <a href="aviation.html">School Of Aviation</a></p>
+            <p><a href="diving.html">School Of Diving</a></p>
+           <p><a href="engineering.html">School Of Engineering</a></p> 
+           <p><a href="maritime.html">School Of Maritime Transport & Business Technology</a></p> 
+           <p><a href="food-science.html">School Of Food Science</a></p> 
+             <p><a href="training.html">School Of Vocational Training/Rehabilitation</a></p> 
+           <p><a href="agriculture.html">School of Agriculture</a></p>
+           <p><a href="sciences.html">School of Sciences</a></p>
+          </div>
+          
+          <div>
+          <h3>INFORMATION CENTER</h3>
+          <p><a href="blog.php">News and Blog</a></p>
+          <p><a href="certificate.php">Certificate Verification</a></p>
+          <p><a href="alumni.php">Alumni page</a></p>
+          </div>
+          
+          <div>
+            <h3>CONTACT</h3>
+            <p><a style="color: white;text-decoration: none;" href="mailto:support@grafordcollege.com"><i class="fa fa-share-square-o"></i> support@grafordcollege.com</a></p>
+            <p><i class="fa fa-phone-square" ></i> +234 (0) 8067333223</p>
+            <p><i class="fa fa-phone-square" ></i> +234 (0) 8098883608</p>
+          </div>
+          </div>
+          <hr>
+          <div style="text-align: center;">
+            <p>©2023  GRAF-COMAS- All rights reserved</p>
+          </div>
+          </footer>
+          </div>
+            <script src="javascript.js"></script>
+         <script>
+      if (window.location.pathname.endsWith('.html')) {
+          var newUrl = window.location.pathname.slice(0, -5); // Remove .html extension
+          window.history.replaceState({}, document.title, newUrl); // Change the URL without reloading the page
+      }
+    </script>
+</body>
+        </html>
+    
+    
+    
+    

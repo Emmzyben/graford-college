@@ -1,0 +1,336 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Director Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+</head>
+<body>
+  <header id="cover">
+    <div style="background-color: #0e0e8822;">
+         <div id="firstUp">
+           <div><p><i class="fa fa-phone-square"></i> +234 (0) 8067333223 <span id="sp"><i class="fa fa-phone-square"></i> +234 (0) 8098883608 </span></p></div>
+            <div style="text-align: right;"><p><a style="color: white;text-decoration: none;" href="mailto:support@grafordcollege.com"><i class="fa fa-share-square-o"></i> support@grafordcollege.com</a></p></div>
+         </div>
+           <div style="display: flex;flex-direction: row;">
+               <span id="side"><img src="images/logo.jpg" alt="logo"  ></span>
+                <span><h1>GRAFORD COLLEGE OF MARITIME & AVIATION STUDIES</h1></span>
+               <span id="side" style="text-align:right;">
+                   <ul>
+                   <li><a href="register.php">REGISTER NOW!</a></li>
+                   <li><a href="contact.html">CONTACT US</a></li>
+                   </ul>
+               </span>
+           </div>
+
+          </div></header> 
+
+        
+             <div id="bg">
+                 <ul>
+                     <li><a href="index.html">HOME</a></li>
+                     <li class="nav-container">
+                       <span id="hoverer">ABOUT</span> 
+                        <ul id="dropdown">
+                         <li><a href="about.html">ABOUT US</a></li> 
+                         <li><a href="director.html">DIRECTOR PROFILE</a></li> 
+                         <li><a href="staff.php">STAFF</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-container">
+                       <span id="hoverer">SCHOOLS</span> 
+                        <ul id="dropdown" style="width: 300px;">
+                           <li><a href="nautical.html">SCHOOL OF NAUTICAL STUDIES</a></li>
+                           <li><a href="aviation.html">SCHOOL OF AVIATION</a></li>
+                           <li><a href="diving.html">SCHOOL OF DIVING</a></li>
+                           <li><a href="engineering.html">SCHOOL OF ENGINEERING</a></li>
+                           <li><a href="maritime.html">SCHOOL OF MARITIME TRANSPORT & BUSINESS TECHNOLOGY</a></li>
+                           <li><a href="food-science.html">SCHOOL OF FOOD SCIENCE</a></li>
+                           <li><a href="training.html">SCHOOL OF VOCATIONAL TRAINING/REHABILITATION</a></li>
+                           <li><a href="agriculture.html">SCHOOL OF AGRICULTURE</a></li>
+                           <li><a href="sciences.html">SCHOOL OF SCIENCES</a></li>
+                 
+                        </ul>
+                      </li>
+   
+                     <li class="nav-container">
+                        <span id="hoverer">PORTAL LOGIN</span> 
+                         <ul id="dropdown">
+                          <li><a href="admissions.php">ADMISSION PORTAL</a></li> 
+                          <li><a href="student.php">STUDENT PORTAL</a></li> 
+                         </ul>
+                       </li>
+                       <li class="nav-container" >
+                         <span id="hoverer">INFORMATION</span> 
+                          <ul id="dropdown">
+                            <li><a href="certificate.php">CERTIFICATE VERIFICATION</a></li> 
+                           <li><a href="alumni.php">ALUMNI</a></li> 
+                           <li><a href="blog.php">NEWS/BLOG</a></li>
+                          </ul>
+                        </li>
+                     <li><a href="study.php">STUDY CENTER</a></li>
+                 </ul>
+             </div>
+     
+
+       
+    <aside >
+        <div style="width: 20%;"><img src="images/logo.jpg" alt="logo" ></div>
+        <div style="text-align: center;padding-top: 15px;color: #090970;padding-left: 20px;"><h3>GRAF-COMAS</h3></div>
+        <div  id="span" onclick="openNav()" style="cursor: pointer;">&#9776;</div>
+    </aside>
+
+<nav>
+    <div id="mySidenav" class="sidenav">
+
+      <img src="images/logo.jpg" alt="" id="img"><hr>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="director.html">Director Profile</a>
+      <a class="dropdown-item" onclick="toggleDropdown()" style="  background-color:#0e0e88;
+      color: #fff;">
+       Schools +
+          <div class="sub-menu1" style="display: none;transition: 0.5s;background-color: #d3e4ee;
+          color: #fff;">
+            <a href="nautical.html">School of Nautical Studies</a>
+            <a href="aviation.html">School Of Aviation</a>
+            <a href="diving.html"> School Of Diving </a>
+            <a href="engineering.html">School Of Engineering </a>
+            <a href="maritime.html">School Of Maritime Transport & Business Technology </a>
+            <a href="food-science.html">School Of Food Science</a>
+            <a href="training.html">School Of Vocational Training/Rehabilitation</a>
+            <a href="agriculture.html">School of Agriculture</a>
+            <a href="sciences.html">School of Sciences</a>
+          </div>
+        </a>
+     
+        <script>
+          function toggleDropdown() {
+            const subMenu = document.querySelector('.sub-menu1');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+          }
+        </script>
+      <a href="admissions.php">Admission Portal</a>
+      <a href="student.php">Student Portal</a>
+      <a href="staff.php">Staff Portal</a>
+      <a href="certificate.php">Certificate Verification</a>
+      <a href="alumni.php">Alumni</a>
+      <a href="study.php">Study Center</a>
+      <a href="blog.php">News/blog</a>
+      <a href="register.php">Register</a>
+      <a href="contact.html">Contact</a> 
+    </div>
+    <script>
+      
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
+
+  var open = false;
+
+function openNav() {
+    var sideNav = document.getElementById("mySidenav");
+    
+    if (sideNav.style.width === "0px" || sideNav.style.width === "") {
+        sideNav.style.width = "250px";
+        open = true;
+    } else {
+        sideNav.style.width = "0";
+        open = false;
+    }
+}
+    </script>
+</nav>
+
+<div>
+    <div id="move"> 
+        <h1>ABOUT THE EXECUTIVE DIRECTOR/CEO</h1> 
+<h3>GRAFORD COLLEGE OF MARITIME & AVIATION STUDIES</h3>
+</div>
+  
+  <div id="director">
+<div id="pic">
+<img src="images/dir.jpg" alt="dir">
+<p > <b>HIGH CHIEF GEN. G.C. OPUYE (JP")(Criminologist)</b></p>
+<p><i> Executive Director/CEO</i></p>
+<p><i>Graford College Of Maritime & Aviation Studies. (Graf-Comas)</i></p>
+<p><i>Anti Cyber-Crime, Criminal Intelligence & Forensic Investigation Specialist.</i></p>
+<p><i style="color: red;">CSIS/USA/CIA/FBI/SSS/CCIA/CFIS.</i></p>
+</div>
+
+<div>
+<p>HIGH CHIEF GEN. G.C. OPUYE (JP) Is an International Criminologist and Forensic Investigation Specialist.</p>
+  <p> He is a Criminal Scientist</p> 
+   <p> He studied International Criminology and Forensic Investigation in Salford University Of London England</p>
+   <p>He is a forensic criminologist and an investigative and detective professional who have over ten years of theoritical and empirical experience. </p>
+ <p> He held several positions which include:</p> 
+<p><b>Security Intelligent Analyst and Crime Officer. </b></p>
+<p>The scope of his investigation include;</p>
+<p>Bank Fraud • Wired Fraud • Cyber-Crime • Militancy • Kidnapping • Homicide • Rape •</p> <p>Cultism • Gang Culture • Terrorism • Nato-terrorism • Robbery • Pipeline Vandalism • Espionage Activities •</p> <p> Surveillance and Undercover Investigation • Evaluating and analysing Intelligence Peace and Conflict Resolution etc.</p>
+</div>
+
+</div>  
+</div>
+
+<div id="pad" style="font-style: italic;">
+    <h3 style="color: #0e0e88;">Background</h3>
+  <p>  He is a certified international criminologist and forensic investigation specialist who offers basic, advanced and professional training and certifications on all kinds of Security/Criminal Intelligence and Forensic Investigation Services etc. </p>
+<p>He was specially and professionally trained and certified by: </p>
+<p>AMERICANS • ISRAELIS • CHINESE • JAPANESE • RUSSIANS and KOREANS on Certified Security Intelligent Specialist • Cyber Security Administration • Forensic Investigation  • Criminal Psychology • Criminal Justice • Criminal Inteligence and Psychological Detection • Defense and Executive Protection etc.</p> 
+<h3 style="color: #0e0e88;">Trainings and Combat experience</h3>
+<p>During the practical combat training and examination event of combatants in HONG-KONG (CHINA),
+He became the best combat vet over one thousand three hundred and seventy nine intelligent war criminals in the practical criminal intelligent combat camp.</p>
+<p>In the combatant training camp, he became the best in Gorilla warfare
+He was the best with knives, guns and with his bare hands. 
+He was trained to ignore weather, to ignore pains, to eat things that can make a billy goat puke, to stay off the land. </p>
+<p>In the North Korea his job was to investigate and carry out an espionage activities and to dispose enemy personnels, win by attrition.</p>
+<p>Gen. G.c. Opuye became the best combat vet in the camp, 
+He also became the first certified West African Private Intelligent Green Beret of the BRITISH MARINE and the first in the history of West African Private Forensic Investigation Association that received the US CONGRESSIONAL MEDAL OF HONOUR.
+</p>
+<p>He was later trained and certified by the British on helicopter pilot program in Scotland where he met some top engineers in the Maritime Oil and Gas filed and later run a maritime programs in Kairo (Egypt) and fully embarked on Maritime Oil and Gas studies in</p>
+<p>• India</p>
+<p>• Australia</p>
+<p>• Dubai and Philippine.</p>
+<p>Today he is one of the best Security, Criminal Intelligent and Forensic Investigation service providers through FBI/FBS and also one of the best through <b>U-SSITEL NIG LTD</b>. in Maritime Oil and Gas, Intercontinental Catering, Building and Construction, Safety and Security service providers worldwide.</p>
+<p>He is also one of the best through <b>GRAFORD COLLEGE OF MARITIME & AVIATION STUDIES</b>  in West African Region.</p>
+
+<h2 style="color: #0e0e88;" >Positions held and Specializations</h2>
+<p>He has served in the following capacities:</p>
+ <p><b>PRIVATE Undercover Investigation Specialist (STANTET AIRPORT CENTRAL LONDON ENGLAND)</b></p> 
+<p>POSITION: General Supervisor Department of Air Crash Investigation.</p>
+<p><b>PRIVATE Undercover Criminal Intelligent Analyst. 
+(KOTOKA INTERNATIONAL AIRPORT GHANA)</b></p> 
+<p>POSITION: Chief Operation Officer, Department Of Illegal Chippings/Cargo.</p>
+<p><b>GLOBAL THREAT SOLUTION</b></p> 
+ <p>POSITION: Executive Protection Specialist. 
+Department Of Espionage Activities and Nato-Terrorism Studies.</p>
+<p><b>FINAL BEREAU OF COAST GUARD</b></p> 
+<p>POSITION: Strategic And Atmospheric Administrator</p>
+<p><b>BUREAU OF DOLMAK LTD.</b></p> 
+<p>Area Of Specialization:</p>
+<ul>
+  <li>Instructor/Trainer; Criminal Justice and Strategic Intelligence</li>
+  <li>Criminology and Forensic Investigation</li>
+  <li>Criminology and Security Intelligence Management</li>
+  <li>Criminal Intelligence and Psychological Detection</li>
+</ul>
+
+
+<p><b>PAMARK-DRAGON SECURITY SERVICES</b></p>
+<p>Area Of Specialization:</p>
+<ul>
+  <li>Instructor/Trainer; Offensive and Defensive Driving</li>
+  <li>Executive Protection/Mixed Martial Art Instructor</li>
+  <li>Cyber Security Management, Peace and Conflict Resolution.</li>
+  <li>Director, department of private forensic investigation (RUSSIA)</li>
+  <li> Private Undercover Crime Officer, Arrival and Departure (COTOKA INTERNATIONAL AIRPORT GHANA)</li>
+  <li>Undercover Criminal Investigator, department of Aviation Intelligence (JOMO KENYATTA INTERNATIONAL AIRPORT)</li>
+  <li>Private Helicopter pilot (DROPOLGO AIRWAYS 11RQ2330)</li>
+  <li>Helicopter landing officer (PHILIPPINE MARINE WAYS)</li>
+  <li>General intellingent supervisor (AUSTRALIAN PRIVATE COAST GUARD)</li>
+  <li>Head supervisor, department of justice (IRANIAN PRIVATE INVESTIGATION)</li>
+</ul>
+
+<p><b>PROFESSIONAL AFFILIATIONS ON SECURITY & CRIMINAL INVESTIGATION:</b></p>
+<ul>
+  <li>International Association for Security Intelligence Studies {IACIS} USA.</li>
+  <li>International Association for Organized Crime Studies {IAOCS}, CANADA.</li>
+  <li>International Association for Law Enforcement and Intelligent Analyst, {IALEIA} NEW YORK.</li>
+  <li>International Association for Crisis and Crime Studies {IACCS} KOREA</li>
+  <li> Malaysian Society for Industrial Security, {MSIS} MALAYSIA.</li>
+  <li>International Association for Loss Prevention, {IALP} AUSTRALIA.</li>
+  <li>Certified Criminal Intelligent Specialist, International Criminologists Association (CCIS) ROMANIA.</li>
+  <li>International Association for Security Intelligence and Defence Studies {IASIDS} HON-KONG CHINA.</li>
+  <li>International Association for Peace and Conflict Resolution and Undercover Investigation {IACRUI} CAIRO EGYPT.</li>
+  <li>International Association for Security and Counter-Terrorism Expatriates {IASCTE} IRAN </li>
+  <li>International Association for Maritime Security Intelligence Administration {IAMSI} DUBAI.</li>
+</ul>
+
+
+<p><b>HONORS & AWARDS AROUND THE WORLD:</b></p>
+<ul>
+  <li> Security and Peace Keeping Luminary, International Association of Criminologists. (USA)</li>
+  <li>Criminal Intelligent and Executive Protection Specialist "SIEPS" (Hon-kong Private Defence Association)</li>
+  <li>Award of Anti Terrorism Intelligent Analyst (SAUDI ARABIA)</li>
+  <li>Award Of Excellent For Kung-Fu and Karate "AEKK" (Hilarious Martial Arts).</li>
+  <li>International Award of Professionalism for Mixed-Martial Art "MMA" (TOKYO JAPAN).</li>
+  <li>International Award for Forensic Investigation Specialist, (USA).</li>
+  <li>Ambassador of Peace Award by the International Association of Peace</li>
+  <li>Keeping Council of Central London, England.</li>
+</ul>
+
+ 
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<div id="overfoot">
+  <footer>
+<div style="display: flex;flex-direction: row;">
+  <div><img src="images/logo.jpg" alt="logo" width="80px"></div>
+  <div><h3 style="padding: 10px;">GRAF-COMAS</h3></div>
+</div>
+<hr>
+<div id="foot">
+<div>
+<h3>ABOUT</h3>
+<p><a href="about.html">About Us</a></p>
+<p><a href="director.html">Director Profile</a></p>
+</div>
+
+<div>
+  <h3>SCHOOLS</h3>
+<p><a href="nautical.html">School Of Nautical Studies</a></p>
+ <p> <a href="aviation.html">School Of Aviation</a></p>
+  <p><a href="diving.html">School Of Diving</a></p>
+ <p><a href="engineering.html">School Of Engineering</a></p> 
+ <p><a href="maritime.html">School Of Maritime Transport & Business Technology</a></p> 
+ <p><a href="food-science.html">School Of Food Science</a></p> 
+   <p><a href="training.html">School Of Vocational Training/Rehabilitation</a></p> 
+           <p><a href="agriculture.html">School of Agriculture</a></p>
+           <p><a href="sciences.html">School of Sciences</a></p>
+</div>
+
+<div>
+<h3>INFORMATION CENTER</h3>
+<p><a href="blog.php">News and Blog</a></p>
+<p><a href="certificate.php">Certificate Verification</a></p>
+<p><a href="alumni.php">Alumni page</a></p>
+</div>
+
+<div>
+  <h3>CONTACT</h3>
+  <p><a style="color: white;text-decoration: none;" href="mailto:support@grafordcollege.com"><i class="fa fa-share-square-o"></i> support@grafordcollege.com</a></p>
+  <p><i class="fa fa-phone-square" ></i> +234 (0) 8067333223</p>
+  <p><i class="fa fa-phone-square" ></i> +234 (0) 8098883608</p>
+</div>
+</div>
+<hr>
+<div style="text-align: center;">
+  <p>©2023  GRAF-COMAS- All rights reserved</p>
+</div>
+</footer>
+</div>
+    <script src="javascript.js"></script>
+ <script>
+      if (window.location.pathname.endsWith('.html')) {
+          var newUrl = window.location.pathname.slice(0, -5); // Remove .html extension
+          window.history.replaceState({}, document.title, newUrl); // Change the URL without reloading the page
+      }
+    </script>
+</body>
+</html>

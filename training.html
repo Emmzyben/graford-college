@@ -1,0 +1,632 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SCHOOL OF VOCATIONAL TRAINING/REHABILITATION</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+<style>
+  
+  #divide{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    #divide>div{
+      width: 47%
+    }
+    #divide>div>img{
+      width: 400px;
+      height: 300px;
+      margin: 10px;
+      box-shadow: 1px 1px 10px rgb(172, 183, 209);
+    }
+   
+     @media screen and (max-width:800px){
+      #divide>div>img{
+          display: block;
+          width: 90%;
+          margin: 20px;
+        }
+        #divide{
+          display: flex;
+          flex-direction: column;
+        }
+        #divide>div{
+          width: auto;
+        }
+        #none{
+          display: none;
+        }
+    } 
+  </style>
+</head>
+    <body>
+      <header id="cover">
+        <div style="background-color: #0e0e8822;">
+             <div id="firstUp">
+               <div><p><i class="fa fa-phone-square"></i> +234 (0) 8067333223 <span id="sp"><i class="fa fa-phone-square"></i> +234 (0) 8098883608 </span></p></div>
+                <div style="text-align: right;"><p><a style="color: white;text-decoration: none;" href="mailto:support@grafordcollege.com"><i class="fa fa-share-square-o"></i> support@grafordcollege.com</a></p></div>
+             </div>
+               <div style="display: flex;flex-direction: row;">
+                   <span id="side"><img src="images/logo.jpg" alt="logo"  ></span>
+                    <span><h1>GRAFORD COLLEGE OF MARITIME & AVIATION STUDIES</h1></span>
+                   <span id="side" style="text-align:right;">
+                       <ul>
+                       <li><a href="register.php">REGISTER NOW!</a></li>
+                       <li><a href="contact.html">CONTACT US</a></li>
+                       </ul>
+                   </span>
+               </div>
+    
+              </div></header> 
+    
+            
+                 <div id="bg">
+                     <ul>
+                         <li><a href="index.html">HOME</a></li>
+                         <li class="nav-container">
+                           <span id="hoverer">ABOUT</span> 
+                            <ul id="dropdown">
+                             <li><a href="about.html">ABOUT US</a></li> 
+                             <li><a href="director.html">DIRECTOR PROFILE</a></li> 
+                             <li><a href="staff.php">STAFF</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-container">
+                           <span id="hoverer">SCHOOLS</span> 
+                            <ul id="dropdown" style="width: 300px;">
+                               <li><a href="nautical.html">SCHOOL OF NAUTICAL STUDIES</a></li>
+                               <li><a href="aviation.html">SCHOOL OF AVIATION</a></li>
+                               <li><a href="diving.html">SCHOOL OF DIVING</a></li>
+                               <li><a href="engineering.html">SCHOOL OF ENGINEERING</a></li>
+                               <li><a href="maritime.html">SCHOOL OF MARITIME TRANSPORT & BUSINESS TECHNOLOGY</a></li>
+                               <li><a href="food-science.html">SCHOOL OF FOOD SCIENCE</a></li>
+                               <li><a href="training.html">SCHOOL OF VOCATIONAL TRAINING/REHABILITATION</a></li>
+                           <li><a href="agriculture.html">SCHOOL OF AGRICULTURE</a></li>
+                           <li><a href="sciences.html">SCHOOL OF SCIENCES</a></li>
+                     
+                            </ul>
+                          </li>
+       
+                         <li class="nav-container">
+                            <span id="hoverer">PORTAL LOGIN</span> 
+                             <ul id="dropdown">
+                              <li><a href="admissions.php">ADMISSION PORTAL</a></li> 
+                              <li><a href="student.php">STUDENT PORTAL</a></li> 
+                             </ul>
+                           </li>
+                           <li class="nav-container" >
+                             <span id="hoverer">INFORMATION</span> 
+                              <ul id="dropdown">
+                                <li><a href="certificate.php">CERTIFICATE VERIFICATION</a></li> 
+                               <li><a href="alumni.php">ALUMNI</a></li> 
+                               <li><a href="blog.php">NEWS/BLOG</a></li>
+                              </ul>
+                            </li>
+                         <li><a href="study.php">STUDY CENTER</a></li>
+                     </ul>
+                 </div>
+         
+    
+           
+        <aside >
+            <div style="width: 20%;"><img src="images/logo.jpg" alt="logo" ></div>
+            <div style="text-align: center;padding-top: 15px;color: #090970;padding-left: 20px;"><h3>GRAF-COMAS</h3></div>
+            <div  id="span" onclick="openNav()" style="cursor: pointer;">&#9776;</div>
+        </aside>
+    
+    <nav>
+        <div id="mySidenav" class="sidenav">
+    
+          <img src="images/logo.jpg" alt="" id="img"><hr>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="director.html">Director Profile</a>
+          <a class="dropdown-item" onclick="toggleDropdown()" style="  background-color:#0e0e88;
+          color: #fff;">
+           Schools +
+              <div class="sub-menu1" style="display: none;transition: 0.5s;background-color: #d3e4ee;
+              color: #fff;">
+                <a href="nautical.html">School of Nautical Studies</a>
+                <a href="aviation.html">School Of Aviation</a>
+                <a href="diving.html"> School Of Diving </a>
+                <a href="engineering.html">School Of Engineering </a>
+                <a href="maritime.html">School Of Maritime Transport & Business Technology </a>
+                <a href="food-science.html">School Of Food Science</a>
+                <a href="training.html">School Of Vocational Training/Rehabilitation</a>
+                <a href="agriculture.html">School of Agriculture</a>
+                <a href="sciences.html">School of Sciences</a>
+              </div>
+            </a>
+         
+            <script>
+              function toggleDropdown() {
+                const subMenu = document.querySelector('.sub-menu1');
+                subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+              }
+            </script>
+          <a href="admissions.php">Admission Portal</a>
+          <a href="student.php">Student Portal</a>
+          <a href="staff.php">Staff Portal</a>
+          <a href="certificate.php">Certificate Verification</a>
+          <a href="alumni.php">Alumni</a>
+          <a href="study.php">Study Center</a>
+          <a href="blog.php">News/blog</a>
+          <a href="register.php">Register</a>
+          <a href="contact.html">Contact</a> 
+        </div>
+        <script>
+          
+    function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    
+      var open = false;
+    
+    function openNav() {
+        var sideNav = document.getElementById("mySidenav");
+        
+        if (sideNav.style.width === "0px" || sideNav.style.width === "") {
+            sideNav.style.width = "250px";
+            open = true;
+        } else {
+            sideNav.style.width = "0";
+            open = false;
+        }
+    }
+        </script>
+    </nav>
+<img src="images/picc31.jpg" alt="" id="schools" style="object-fit: cover;">
+    
+    <div id="divide"><div style="padding-left: 20px;padding-right: 20px;"  id="skull">
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('#inUl li').contents().filter(function() {
+            return this.nodeType === 3; // Filter text nodes
+          }).each(function() {
+            var amountRegex = /([\d.,]+(?:m)?)/g; // Regular expression to match amount numbers
+            var replacedText = this.nodeValue.replace(amountRegex, '<span style="color:orangered">$1</span>');
+            $(this).replaceWith(replacedText);
+          });
+        });
+      </script>
+  </script>
+        <div>
+            <h2>SCHOOL OF VOCATIONAL TRAINING/REHABILITATION</h2>
+          <p>We provide a professional skill developmental and rehabilitation training on the following:</p>
+          <ul id="inUl">
+            <li>MARINE CAPTAIN & QUARTERMASTER MASTER
+              <ul>
+                <li>Basic Class 800,000s</li>
+                <li>Advance Class 1.5m (Physical Class Only)</li>
+              </ul>
+            </li>
+          
+            <li>UNDERWATER DIVING
+              <ul>
+                <li>Basic Class 450,000</li>
+                <li>Advance Class 870,000 (Physical Class Only)</li>
+              </ul>
+            </li>
+          
+            <li>OCEANOGRAPHY & ATMOSPHERIC ADMINISTRATION
+              <ul>
+                <li>Diploma Program 380,000</li>
+                <li>Advance Diploma 480,000</li>
+                <li>Professional Diploma 580,000 (Online or Physical)</li>
+              </ul>
+            </li>
+          
+            <li>NEUTRICAL SCIENCES
+              <ul>
+                <li>Diploma Program 550,000</li>
+                <li>Advance Diploma 780,000</li>
+                <li>Professional Diploma 1.5m (Online or Physical)</li>
+              </ul>
+            </li>
+          
+            <li>HSE LEVELS 1, 2 & 3
+              <ul>
+                <li>Level <span style="color: black;">1.</span>  45,000 (Physical/Online Class)</li>
+                <li>Level <span style="color: black;"> 2.</span> 65,000 (Physical/Online Class)</li>
+                <li>Level <span style="color: black;">3.</span>  78,000 (Physical/Online Class)</li>
+              </ul>
+            </li>
+          
+            <li>NEBOSH IGC
+              <ul>
+                <li>450,000 (Physical/Online Class)</li>
+              </ul>
+            </li>
+          
+            <li>BOSIET
+              <ul>
+                <li>350,000 (Physical or Online Class)</li>
+              </ul>
+            </li>
+          
+            <li>SURVIVAL AT SEA
+              <ul>
+                <li>150,000 (Physical Class Only)</li>
+              </ul>
+            </li>
+          
+            <li>FIRST AID
+              <ul>
+                <li>55,000 (Physical or Online Class)</li>
+              </ul>
+            </li>
+          
+            <li>INDUSTRIAL SAFETY FOR OFFSHORE TRAVEL
+              <ul>
+                <li>110,000 (Physical/Online Class)</li>
+              </ul>
+            </li>
+          
+            <li>HELICOPTER LANDING
+              <ul>
+                <li>350,000 (Physical/Online Class)</li>
+              </ul>
+            </li>
+          
+            <li>PRACTICAL MARINE ENGINEERING
+              <ul>
+                <li>Diploma Program 170,000</li>
+                <li>Advance Diploma 250,000</li>
+                <li>Professional Diploma Program 550,000 (Physical Class Only)</li>
+              </ul>
+            </li>
+          
+            <li>INTERCONTINENTAL CATERING
+              <ul>
+                <li>Certificate Program 78,000</li>
+                <li>Diploma Program 180,000</li>
+                <li>Advance Diploma 210,000</li>
+                <li>Professional Diploma 300,000 (Physical/Online Class)</li>
+              </ul>
+            </li>
+          
+            <li>CRANE OPERATION
+              <ul>
+                <li>Mobile Crane Operation Program 498,000</li>
+                <li>Offshore Crane Operation Program 650,000 (Physical Class Only)</li>
+              </ul>
+            </li>
+          
+            <li>CATAPILLAR OPERATION
+              <ul>
+                <li>Caterpillar Operation Program 550,000 (Physical Class Only)</li>
+              </ul>
+            </li>
+          
+            <li>BULLDOZER OPERATION
+              <ul>
+                <li>Operation Program 480,000 (Physical Class Only)</li>
+              </ul>
+            </li>
+          
+            <li>TRUCK DRIVING
+              <ul>
+                <li>Operation Program 350,000 (Physical Class Only)</li>
+              </ul>
+            </li>
+          
+            <li>FORKLIFT OPERATION
+              <ul>
+                <li>Operation Program 250,000 (Physical Class Only)</li>
+              </ul>
+            </li>
+          
+            <li>PIPELINE WELDING
+              <ul>
+                <li>Operation Program 350,000 (Physical Class Only)</li>
+              </ul>
+            </li>
+          
+            <li>PIPE FITTER
+              <ul>
+                <li>Operation Program 380,000 (Physical Class Only)</li>
+              </ul>
+            </li>
+          
+            <li>ARGON WELDING
+              <ul>
+                <li>Operation Program 380,000 (Physical Class Only)</li>
+              </ul>
+            </li>
+          
+            <li>WELDING & FABRICATION
+              <ul>
+                <li>Operation Program 380,000 (Physical Class Only)</li>
+              </ul>
+            </li>
+          
+            <li>ROPE ACCESS CONTROL
+              <ul>
+                <li>Operation Program 450,000</li>
+              </ul>
+            </li>
+             <li>Scaffolding</li>
+            <li>Tug Boat Captain,Deckhand & Confined space safty</li>
+          </ul>
+          
+          <br><br>
+          <p>All fees are payable in installments (in bits) into the Institution Account directly</p>
+          <p>Additional fees applies for study pack for Textbooks, I.D Card, Mariner uniform/PPE, T-Shirt, Exams, Medical, Licensing etc.</p>
+          <br>
+           <br>
+           <p><strong>Fees payment schedule for School of Vocational training</strong></p>
+         <div id="table">
+ <table >
+            <tr>
+              <th>NO</th>
+              <th>Course</th>
+              <th>School Fees</th>
+              <th>Acceptance Fee</th>
+              <th>Uniform</th>
+              <th>Medical</th>
+              <th>Sub Total</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Marine Captain</td>
+              <td>850,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>428,000.00</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Marine Diver</td>
+              <td>750,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>428,000.00</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Crane Operation</td>
+              <td>700,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>778,000.00</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Caterpillar Operation</td>
+              <td>550,000.00</td>
+              <td>15,00.00</td>
+              <td>20,000.00</td>
+              <td>15,000.00</td>
+              <td>300,000.00</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Bulldozer Operation</td>
+              <td>450,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>298,000.00</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Fork Lift Operation</td>
+              <td>250,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>298,000.00</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Truck Driving</td>
+              <td>300,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>378,000.00</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Pipeline Welding</td>
+              <td>600,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>678,000.00</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Pipe Fitting</td>
+              <td>600,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>678,000.00</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Argon Welding</td>
+              <td>600,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>678,000.00</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Welding & Fabrication</td>
+              <td>600,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>678,000.00</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Structural Welding</td>
+              <td>280,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>358,000.00</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Structural Engineering</td>
+              <td>400,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>478,000.00</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Rope Access Control</td>
+              <td>600,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>678,000.00</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>NEBOSH</td>
+              <td>400,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>478,000.00</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>HSE 1, 2 & 3</td>
+              <td>78,000.00</td>
+              <td colspan="3"></td>
+              <td>78,000.00</td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>HSE Engineer</td>
+              <td>360,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>438,000.00</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>Helicopter Landing</td>
+              <td>400,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>478,000.00</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>HUET</td>
+              <td>350,000.00</td>
+              <td>15,00.00</td>
+              <td>48,000.00</td>
+              <td>15,000.00</td>
+              <td>428,000.00</td>
+            </tr>
+          </table>
+         </div>
+          
+<br>          
+      <p><b>How to make payments</b></p>
+      <p>You can make payments online or manually</p>
+      <p>To pay manually, make a transfer to the school account below and send proof of payment as well as your details to <strong>support@grafordcollege.com</strong></p>
+    <strong> <p>Account Number:1229433888</p>
+     <p>Account Name: GRAFORD COLLEGE OF MARITIME & AVIATION STUDIES</p> 
+      
+      <p>Bank: Zenith Bank PLC</p>
+   </strong>
+        </div>
+          
+        </div>
+      
+        <div id="none">
+          <img src="images/pic5.webp" alt="">
+          <img src="images/picc2.jpg" alt="">
+          <img src="images/picc5.jpg" alt="">
+          <img src="images/picc9.jpg" alt="">
+          <img src="images/picc25.jpg" alt="">
+          <img src="images/picc31.jpg" alt="">
+          <img src="images/pic7.jpg" alt="">
+        </div>
+      </div>
+     
+    
+        <div id="overfoot">
+            <footer>
+          <div style="display: flex;flex-direction: row;">
+            <div><img src="images/logo.jpg" alt="logo" width="80px"></div>
+            <div><h3 style="padding: 10px;">GRAF-COMAS</h3></div>
+          </div>
+          <hr>
+          <div id="foot">
+          <div>
+          <h3>ABOUT</h3>
+          <p><a href="about.html">About Us</a></p>
+          <p><a href="director.html">Director Profile</a></p>
+          </div>
+          
+           <div>
+            <h3>SCHOOLS</h3>
+          <p><a href="nautical.html">School Of Nautical Studies</a></p>
+           <p> <a href="aviation.html">School Of Aviation</a></p>
+            <p><a href="diving.html">School Of Diving</a></p>
+         <p><a href="engineering.html">School Of Engineering</a></p> 
+           <p><a href="maritime.html">School Of Maritime Transport & Business Technology</a></p> 
+           <p><a href="food-science.html">School Of Food Science</a></p> 
+             <p><a href="training.html">School Of Vocational Training/Rehabilitation</a></p> 
+           <p><a href="agriculture.html">School of Agriculture</a></p>
+           <p><a href="sciences.html">School of Sciences</a></p>
+          </div>
+          
+          <div>
+          <h3>INFORMATION CENTER</h3>
+          <p><a href="blog.php">News and Blog</a></p>
+          <p><a href="certificate.php">Certificate Verification</a></p>
+          <p><a href="alumni.php">Alumni page</a></p>
+          </div>
+          
+          <div>
+            <h3>CONTACT</h3>
+            <p><a style="color: white;text-decoration: none;" href="mailto:support@grafordcollege.com"><i class="fa fa-share-square-o"></i> support@grafordcollege.com</a></p>
+            <p><i class="fa fa-phone-square" ></i> +234 (0) 8067333223</p>
+            <p><i class="fa fa-phone-square" ></i> +234 (0) 8098883608</p>
+          </div>
+          </div>
+          
+          <hr>
+          <div style="text-align: center;">
+            <p>©2023  GRAF-COMAS- All rights reserved</p>
+          </div>
+          </footer>
+          </div>
+            <script src="javascript.js"></script>
+         <script>
+      if (window.location.pathname.endsWith('.html')) {
+          var newUrl = window.location.pathname.slice(0, -5); // Remove .html extension
+          window.history.replaceState({}, document.title, newUrl); // Change the URL without reloading the page
+      }
+    </script>
+</body>
+        </html>
+    
+    
+    
+    

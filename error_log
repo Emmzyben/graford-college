@@ -1,0 +1,186 @@
+[27-Jan-2024 22:52:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'school' in 'field list' in /home/grafordc/public_html/register.php:100
+Stack trace:
+#0 /home/grafordc/public_html/register.php(100): mysqli->prepare('INSERT INTO acc...')
+#1 {main}
+  thrown in /home/grafordc/public_html/register.php on line 100
+[27-Jan-2024 22:52:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'school' in 'field list' in /home/grafordc/public_html/register.php:100
+Stack trace:
+#0 /home/grafordc/public_html/register.php(100): mysqli->prepare('INSERT INTO acc...')
+#1 {main}
+  thrown in /home/grafordc/public_html/register.php on line 100
+[27-Jan-2024 22:53:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'school' in 'field list' in /home/grafordc/public_html/register.php:100
+Stack trace:
+#0 /home/grafordc/public_html/register.php(100): mysqli->prepare('INSERT INTO acc...')
+#1 {main}
+  thrown in /home/grafordc/public_html/register.php on line 100
+[27-Jan-2024 22:53:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'school' in 'field list' in /home/grafordc/public_html/register.php:100
+Stack trace:
+#0 /home/grafordc/public_html/register.php(100): mysqli->prepare('INSERT INTO acc...')
+#1 {main}
+  thrown in /home/grafordc/public_html/register.php on line 100
+[27-Jan-2024 22:54:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'school' in 'field list' in /home/grafordc/public_html/register.php:100
+Stack trace:
+#0 /home/grafordc/public_html/register.php(100): mysqli->prepare('INSERT INTO acc...')
+#1 {main}
+  thrown in /home/grafordc/public_html/register.php on line 100
+[27-Jan-2024 22:58:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'school' in 'field list' in /home/grafordc/public_html/register.php:103
+Stack trace:
+#0 /home/grafordc/public_html/register.php(103): mysqli->prepare('INSERT INTO acc...')
+#1 {main}
+  thrown in /home/grafordc/public_html/register.php on line 103
+[27-Jan-2024 23:02:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'schools' in 'field list' in /home/grafordc/public_html/overview1.php:27
+Stack trace:
+#0 /home/grafordc/public_html/overview1.php(27): mysqli->prepare('SELECT id, full...')
+#1 {main}
+  thrown in /home/grafordc/public_html/overview1.php on line 27
+[27-Jan-2024 23:04:25 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[27-Jan-2024 23:04:25 UTC] PHP Warning:  Undefined array key "school" in /home/grafordc/public_html/overview1.php on line 195
+[27-Jan-2024 23:05:04 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[27-Jan-2024 23:05:04 UTC] PHP Warning:  Undefined array key "school" in /home/grafordc/public_html/overview1.php on line 195
+[27-Jan-2024 23:05:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'schools' in 'field list' in /home/grafordc/public_html/Accounts.php:27
+Stack trace:
+#0 /home/grafordc/public_html/Accounts.php(27): mysqli->prepare('SELECT id, full...')
+#1 {main}
+  thrown in /home/grafordc/public_html/Accounts.php on line 27
+[27-Jan-2024 23:05:22 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[27-Jan-2024 23:05:22 UTC] PHP Warning:  Undefined array key "school" in /home/grafordc/public_html/overview1.php on line 195
+[27-Jan-2024 23:06:07 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[27-Jan-2024 23:06:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'schools' in 'field list' in /home/grafordc/public_html/Accounts.php:27
+Stack trace:
+#0 /home/grafordc/public_html/Accounts.php(27): mysqli->prepare('SELECT id, full...')
+#1 {main}
+  thrown in /home/grafordc/public_html/Accounts.php on line 27
+[27-Jan-2024 23:07:52 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[27-Jan-2024 23:10:13 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection timed out in /home/grafordc/public_html/Admission_offer.php:105
+Stack trace:
+#0 /home/grafordc/public_html/Admission_offer.php(105): mysqli->__construct('fdb1034.awardsp...', '4097332_graford', 'nikido886', '4097332_graford')
+#1 {main}
+  thrown in /home/grafordc/public_html/Admission_offer.php on line 105
+[27-Jan-2024 23:11:27 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection timed out in /home/grafordc/public_html/Admission_offer.php:105
+Stack trace:
+#0 /home/grafordc/public_html/Admission_offer.php(105): mysqli->__construct('fdb1034.awardsp...', '4097332_graford', 'nikido886', '4097332_graford')
+#1 {main}
+  thrown in /home/grafordc/public_html/Admission_offer.php on line 105
+[27-Jan-2024 23:12:32 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection timed out in /home/grafordc/public_html/Admission_offer.php:105
+Stack trace:
+#0 /home/grafordc/public_html/Admission_offer.php(105): mysqli->__construct('fdb1034.awardsp...', '4097332_graford', 'nikido886', '4097332_graford')
+#1 {main}
+  thrown in /home/grafordc/public_html/Admission_offer.php on line 105
+[27-Jan-2024 23:21:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection timed out in /home/grafordc/public_html/Admission_offer.php:105
+Stack trace:
+#0 /home/grafordc/public_html/Admission_offer.php(105): mysqli->__construct('fdb1034.awardsp...', '4097332_graford', 'nikido886', '4097332_graford')
+#1 {main}
+  thrown in /home/grafordc/public_html/Admission_offer.php on line 105
+[27-Jan-2024 23:22:36 UTC] PHP Warning:  Undefined variable $database in /home/grafordc/public_html/Admission_offer.php on line 105
+[27-Jan-2024 23:22:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/grafordc/public_html/Admission_offer.php:115
+Stack trace:
+#0 /home/grafordc/public_html/Admission_offer.php(115): mysqli->query('SELECT fullName...')
+#1 {main}
+  thrown in /home/grafordc/public_html/Admission_offer.php on line 115
+[27-Jan-2024 23:22:46 UTC] PHP Warning:  Undefined variable $database in /home/grafordc/public_html/Admission_offer.php on line 105
+[27-Jan-2024 23:22:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: No database selected in /home/grafordc/public_html/Admission_offer.php:115
+Stack trace:
+#0 /home/grafordc/public_html/Admission_offer.php(115): mysqli->query('SELECT fullName...')
+#1 {main}
+  thrown in /home/grafordc/public_html/Admission_offer.php on line 115
+[06-Feb-2024 12:37:48 UTC] PHP Warning:  Undefined variable $errorMessage in /home/grafordc/public_html/password_reset.php on line 265
+[06-Feb-2024 12:37:48 UTC] PHP Warning:  Undefined variable $errorMessage in /home/grafordc/public_html/password_reset.php on line 266
+[06-Feb-2024 12:37:48 UTC] PHP Warning:  Undefined variable $successMessage in /home/grafordc/public_html/password_reset.php on line 269
+[06-Feb-2024 12:37:48 UTC] PHP Warning:  Undefined variable $successMessage in /home/grafordc/public_html/password_reset.php on line 270
+[08-Feb-2024 01:43:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function uuid_create() in /home/grafordc/public_html/pay.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/grafordc/public_html/pay.php on line 8
+[08-Feb-2024 01:43:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function uuid_create() in /home/grafordc/public_html/pay.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/grafordc/public_html/pay.php on line 8
+[08-Feb-2024 01:43:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function uuid_create() in /home/grafordc/public_html/pay.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/grafordc/public_html/pay.php on line 8
+[08-Feb-2024 01:43:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function uuid_create() in /home/grafordc/public_html/pay.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/grafordc/public_html/pay.php on line 8
+[08-Feb-2024 02:48:13 UTC] PHP Parse error:  Unclosed '{' on line 19 in /home/grafordc/public_html/register.php on line 697
+[08-Feb-2024 02:48:19 UTC] PHP Parse error:  Unclosed '{' on line 19 in /home/grafordc/public_html/register.php on line 697
+[08-Feb-2024 04:15:35 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[08-Feb-2024 04:48:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function generateRandomString() in /home/grafordc/public_html/Accounts.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/grafordc/public_html/Accounts.php on line 61
+[08-Feb-2024 04:55:22 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 4
+[08-Feb-2024 04:55:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 8
+[08-Feb-2024 04:55:27 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 4
+[08-Feb-2024 04:55:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 8
+[08-Feb-2024 04:55:30 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[08-Feb-2024 04:55:32 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 4
+[08-Feb-2024 04:55:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 8
+[08-Feb-2024 04:55:36 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[08-Feb-2024 04:55:40 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 4
+[08-Feb-2024 04:55:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 8
+[08-Feb-2024 04:56:06 UTC] PHP Warning:  Undefined variable $errorMessage in /home/grafordc/public_html/Accounts.php on line 131
+[08-Feb-2024 04:56:06 UTC] PHP Warning:  Undefined variable $errorMessage in /home/grafordc/public_html/Accounts.php on line 146
+[08-Feb-2024 04:56:46 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 62
+[08-Feb-2024 04:56:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 66
+[08-Feb-2024 04:57:04 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 62
+[08-Feb-2024 04:57:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 66
+[08-Feb-2024 04:59:40 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 63
+[08-Feb-2024 04:59:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 67
+[08-Feb-2024 05:00:04 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 65
+[08-Feb-2024 05:00:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 69
+[08-Feb-2024 05:01:31 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 64
+[08-Feb-2024 05:01:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 68
+[08-Feb-2024 05:01:52 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 61
+[08-Feb-2024 05:01:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 65
+[08-Feb-2024 05:01:54 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 61
+[08-Feb-2024 05:01:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 65
+[08-Feb-2024 05:01:55 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 61
+[08-Feb-2024 05:01:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 65
+[08-Feb-2024 05:02:31 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 61
+[08-Feb-2024 05:02:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 64
+[08-Feb-2024 05:04:23 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 59
+[08-Feb-2024 05:04:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 62
+[08-Feb-2024 05:04:27 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 59
+[08-Feb-2024 05:04:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 62
+[08-Feb-2024 05:05:09 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 63
+[08-Feb-2024 05:05:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 66
+[08-Feb-2024 05:07:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function generateRandomString() in /home/grafordc/public_html/Accounts.php:68
+Stack trace:
+#0 {main}
+  thrown in /home/grafordc/public_html/Accounts.php on line 68
+[08-Feb-2024 05:09:37 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 62
+[08-Feb-2024 05:09:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 65
+[08-Feb-2024 05:10:50 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/grafordc/public_html/Accounts.php on line 81
+[08-Feb-2024 05:10:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/grafordc/public_html/Accounts.php on line 81
+[08-Feb-2024 05:11:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 72
+[08-Feb-2024 05:13:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 68
+[08-Feb-2024 05:17:08 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 61
+[08-Feb-2024 05:17:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 64
+[08-Feb-2024 05:19:27 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/grafordc/public_html/Accounts.php on line 81
+[08-Feb-2024 05:19:27 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/grafordc/public_html/Accounts.php on line 81
+[08-Feb-2024 05:21:26 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[08-Feb-2024 05:21:28 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/grafordc/public_html/Accounts.php on line 81
+[08-Feb-2024 05:21:28 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/grafordc/public_html/Accounts.php on line 81
+[08-Feb-2024 05:22:07 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/grafordc/public_html/Accounts.php on line 81
+[08-Feb-2024 05:22:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/grafordc/public_html/Accounts.php on line 81
+[08-Feb-2024 05:22:10 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/grafordc/public_html/Accounts.php on line 81
+[08-Feb-2024 05:22:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/grafordc/public_html/Accounts.php on line 81
+[08-Feb-2024 05:23:00 UTC] PHP Warning:  Undefined variable $errorMessage in /home/grafordc/public_html/Accounts.php on line 235
+[08-Feb-2024 05:23:00 UTC] PHP Warning:  Undefined variable $errorMessage in /home/grafordc/public_html/Accounts.php on line 250
+[08-Feb-2024 05:23:04 UTC] PHP Warning:  Undefined variable $errorMessage in /home/grafordc/public_html/Accounts.php on line 235
+[08-Feb-2024 05:23:04 UTC] PHP Warning:  Undefined variable $errorMessage in /home/grafordc/public_html/Accounts.php on line 250
+[08-Feb-2024 05:23:07 UTC] PHP Warning:  Undefined variable $errorMessage in /home/grafordc/public_html/Accounts.php on line 235
+[08-Feb-2024 05:23:07 UTC] PHP Warning:  Undefined variable $errorMessage in /home/grafordc/public_html/Accounts.php on line 250
+[08-Feb-2024 05:23:30 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/grafordc/public_html/Accounts.php on line 81
+[08-Feb-2024 05:23:30 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/grafordc/public_html/Accounts.php on line 81
+[08-Feb-2024 05:24:37 UTC] PHP Warning:  Undefined variable $errorMessage in /home/grafordc/public_html/Accounts.php on line 235
+[08-Feb-2024 05:24:37 UTC] PHP Warning:  Undefined variable $errorMessage in /home/grafordc/public_html/Accounts.php on line 250
+[08-Feb-2024 05:26:01 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/grafordc/public_html/Accounts.php on line 14
+[08-Feb-2024 05:36:50 UTC] PHP Parse error:  syntax error, unexpected identifier "Payment", expecting "," or ";" in /home/grafordc/public_html/Accounts.php on line 135
+[08-Feb-2024 05:36:55 UTC] PHP Parse error:  syntax error, unexpected identifier "Payment", expecting "," or ";" in /home/grafordc/public_html/Accounts.php on line 135
+[08-Feb-2024 20:52:47 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[08-Feb-2024 21:04:58 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[08-Feb-2024 21:24:43 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 63
+[08-Feb-2024 21:24:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 66

@@ -1,0 +1,482 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SCHOOL OF MARITIME TRANSPORT & BUSINESS TECHNOLOGY</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+</head>
+    <body>
+      <header id="cover">
+        <div style="background-color: #0e0e8822;">
+             <div id="firstUp">
+               <div><p><i class="fa fa-phone-square"></i> +234 (0) 8067333223 <span id="sp"><i class="fa fa-phone-square"></i> +234 (0) 8098883608 </span></p></div>
+                <div style="text-align: right;"><p><a style="color: white;text-decoration: none;" href="mailto:support@grafordcollege.com"><i class="fa fa-share-square-o"></i> support@grafordcollege.com</a></p></div>
+             </div>
+               <div style="display: flex;flex-direction: row;">
+                   <span id="side"><img src="images/logo.jpg" alt="logo"  ></span>
+                    <span><h1>GRAFORD COLLEGE OF MARITIME & AVIATION STUDIES</h1></span>
+                   <span id="side" style="text-align:right;">
+                       <ul>
+                       <li><a href="register.php">REGISTER NOW!</a></li>
+                       <li><a href="contact.html">CONTACT US</a></li>
+                       </ul>
+                   </span>
+               </div>
+    
+              </div></header> 
+    
+            
+                 <div id="bg">
+                     <ul>
+                         <li><a href="index.html">HOME</a></li>
+                         <li class="nav-container">
+                           <span id="hoverer">ABOUT</span> 
+                            <ul id="dropdown">
+                             <li><a href="about.html">ABOUT US</a></li> 
+                             <li><a href="director.html">DIRECTOR PROFILE</a></li> 
+                             <li><a href="staff.php">STAFF</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-container">
+                           <span id="hoverer">SCHOOLS</span> 
+                            <ul id="dropdown" style="width: 300px;">
+                               <li><a href="nautical.html">SCHOOL OF NAUTICAL STUDIES</a></li>
+                               <li><a href="aviation.html">SCHOOL OF AVIATION</a></li>
+                               <li><a href="diving.html">SCHOOL OF DIVING</a></li>
+                               <li><a href="engineering.html">SCHOOL OF ENGINEERING</a></li>
+                               <li><a href="maritime.html">SCHOOL OF MARITIME TRANSPORT & BUSINESS TECHNOLOGY</a></li>
+                               <li><a href="food-science.html">SCHOOL OF FOOD SCIENCE</a></li>
+                               <li><a href="training.html">SCHOOL OF VOCATIONAL TRAINING/REHABILITATION</a></li>
+                           <li><a href="agriculture.html">SCHOOL OF AGRICULTURE</a></li>
+                           <li><a href="sciences.html">SCHOOL OF SCIENCES</a></li>
+                     
+                            </ul>
+                          </li>
+       
+                         <li class="nav-container">
+                            <span id="hoverer">PORTAL LOGIN</span> 
+                             <ul id="dropdown">
+                              <li><a href="admissions.php">ADMISSION PORTAL</a></li> 
+                              <li><a href="student.php">STUDENT PORTAL</a></li> 
+                             </ul>
+                           </li>
+                           <li class="nav-container" >
+                             <span id="hoverer">INFORMATION</span> 
+                              <ul id="dropdown">
+                                <li><a href="certificate.php">CERTIFICATE VERIFICATION</a></li> 
+                               <li><a href="alumni.php">ALUMNI</a></li> 
+                               <li><a href="blog.php">NEWS/BLOG</a></li>
+                              </ul>
+                            </li>
+                         <li><a href="study.php">STUDY CENTER</a></li>
+                     </ul>
+                 </div>
+         
+    
+           
+        <aside >
+            <div style="width: 20%;"><img src="images/logo.jpg" alt="logo" ></div>
+            <div style="text-align: center;padding-top: 15px;color: #090970;padding-left: 20px;"><h3>GRAF-COMAS</h3></div>
+            <div  id="span" onclick="openNav()" style="cursor: pointer;">&#9776;</div>
+        </aside>
+    
+    <nav>
+        <div id="mySidenav" class="sidenav">
+    
+          <img src="images/logo.jpg" alt="" id="img"><hr>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="director.html">Director Profile</a>
+          <a class="dropdown-item" onclick="toggleDropdown()" style="  background-color:#0e0e88;
+          color: #fff;">
+           Schools +
+              <div class="sub-menu1" style="display: none;transition: 0.5s;background-color: #d3e4ee;
+              color: #fff;">
+                <a href="nautical.html">School of Nautical Studies</a>
+                <a href="aviation.html">School Of Aviation</a>
+                <a href="diving.html"> School Of Diving </a>
+                <a href="engineering.html">School Of Engineering </a>
+                <a href="maritime.html">School Of Maritime Transport & Business Technology </a>
+                <a href="food-science.html">School Of Food Science</a>
+                <a href="training.html">School Of Vocational Training/Rehabilitation</a>
+                <a href="agriculture.html">School of Agriculture</a>
+                <a href="sciences.html">School of Sciences</a>
+              </div>
+            </a>
+         
+            <script>
+              function toggleDropdown() {
+                const subMenu = document.querySelector('.sub-menu1');
+                subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+              }
+            </script>
+          <a href="admissions.php">Admission Portal</a>
+          <a href="student.php">Student Portal</a>
+          <a href="staff.php">Staff Portal</a>
+          <a href="certificate.php">Certificate Verification</a>
+          <a href="alumni.php">Alumni</a>
+          <a href="study.php">Study Center</a>
+          <a href="blog.php">News/blog</a>
+          <a href="register.php">Register</a>
+          <a href="contact.html">Contact</a> 
+        </div>
+        <script>
+          
+    function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    
+      var open = false;
+    
+    function openNav() {
+        var sideNav = document.getElementById("mySidenav");
+        
+        if (sideNav.style.width === "0px" || sideNav.style.width === "") {
+            sideNav.style.width = "250px";
+            open = true;
+        } else {
+            sideNav.style.width = "0";
+            open = false;
+        }
+    }
+        </script>
+    </nav>
+    
+<img src="images/picc34.jpg" alt="" id="schools">
+    
+    <div class="divide">
+ <div style="padding-left: 20px;padding-right: 20px;"  id="skull">
+     
+        <div>
+            <h1>SCHOOL OF MARITIME TRANSPORT & BUSINESS TECHNOLOGY</h1>
+            <p>Maritime Transport and Business Studies</p>
+            <p>Our philosophy is to train manpower for management capacities in maritime and other allied fields such as the oil and gas, marine insurance, maritime law, import/export practice, banking, etc. 
+            The school has expanded her scope to provide training in General Logistics and Transport through the Professional Programmes of the Chartered Institute of Logistics and Transport and the Council for the Regulation of Freight Forwarding of Nigeria. 
+            </p>
+            <p>School of Maritime Studies offers </p>
+            <ol>
+              <li>DIPLOMA IN TRANSPORT & TECHNOLOGY</li>
+              <li>DIPLOMA IN PORT & TERMINAL MANAGEMENT</li>
+              <li>ND IN MARITIME TRANSPORT & BUSINESS STUDIES</li>
+              <li>HND IN MARITIME TRANSPORT & BUSINESS MANAGEMENT</li>
+              <li>DIPLOMA/ND/HND IN OCEANOGRAPHY & ATMOSPHERIC ADMINISTRATION</li>
+              <li>DIPLOMA/HND/ND IN MARITIME COAST GUARD (School fees:#400,000)</li>
+            </ol>
+            
+            <div id="imageDiv">
+              <img src="images/picc8.jpg" alt="">
+            <img src="images/picc26.jpg" alt="">
+            </div>
+            <p onclick="drop()" ><b>Entry Requirements <span id="direct"><i class="fa fa-caret-square-o-right"></i></span></b></p><br>
+            <div id="open" >
+            <p>Higher National Diploma (HND) in Maritime Transport Technology and Business Management</p>
+            <p>Applicants for HND in Maritime Transport Technology and Business Management must:</p>
+            <ol>
+              <li>Possess the Senior School Certificate Examination (SSCE) or its equivalent with at least FIVE CREDIT passes in subjects which must include English Language, Mathematics, Economics, and any other relevant art subject in not more than two (2) sittings.</li>
+            
+              <li>Possess a National Diploma in either Business Management/Business Administration/Secretariat Administration/Maritime Transport and Business Management with a Cumulative Grade Point Average of not less than 2.50 (Lower Credit) from the Graford College Of Maritime and Aviation Studies or another accredited institution. Note: Candidates must have GRAF-COMAS International Application Registration Number (IARN).</li>
+            
+              <li>Have completed a minimum of one year post-ND Industrial Training with evidence or must have acquired a minimum of one year cognate work experience in a relevant organization.</li>
+            
+              <li>Candidates with a PASS at National Diploma level from Graford College Of Maritime and Aviation Studies or another accredited institution must have completed a minimum of two years Post-ND Industrial Training with evidence or must have acquired a minimum of two years cognate work experience in a relevant organization.</li>
+            </ol></div>
+            
+          <h2>Maritime Transport and Business Studies – National Diploma</h2>  
+<p>Management, even at the lowest levels in ports and shipping is a demanding but  satisfying profession, which increases in complexity and breath of responsibility, with rapid changes in technology and business practices.
+</p>
+<p>The National Diploma in Maritime Transport and Business Studies (MTBS) ND programme prepares students for the world of maritime business. The programme is designed to provide an adequate knowledge of management and administration of ports and shipping operations. It is a one year and six months programme made up of three semesters of course work and one semester of Industrial Experience.
+</p>
+<p>The thrust of the programme is a core curriculum with a blend of professional, technological and academic courses which gives students a firm conceptual analytic foundation for decision making and prepares students to meet the challenges of the modern corporate world.
+</p>
+<h3>Prospects</h3>
+<p>Graduates are equipped to pursue careers in Shipbroking, Marine Insurance, Freight Forwarding, Logistics and Distribution, as well as Arbitration. They may also further their education by proceeding on HND or degree studies in Business Administration/Management, Transportation Management, Ports and Shipping Management.
+</p>
+<p><b>Admission Requirements</b></p>
+<p>Admission to the ND MTBS programme is direct entry without the Joint Admissions and Matriculation Board (JAMB). Candidates are expected to have the following subjects in their O-level. Mathematics, English, Economics or Commerce, Geography or Government.
+Candidates are also required to have passed five (5) subjects at Ordinary Level of WAEC/NECO/GCE or NABTEB. The Required ‘O’ Level Subjects are English Language and Mathematics and any other three subjects from the following: Economics, Geography, Commerce, Accounts/Business Studies/Statistics, Government, History, Home Economics/Marketing, Literature in English/French and Additional Mathematics/Biology
+  </p>       
+  <br>
+
+<p><b>Screening/Aptitude Test:</b></p>
+            <p>Candidates are subjected to Screening Exercise/Aptitude Test by sitting for the Graf-Comas Admission and Matriculation Board Exam (GAMBE) and score above 150 which is the given cut off mark stipulated by the college as may from time to time be decided by the Management/Regulatory Authority. </p>
+            <p>Candidates must pass Medical Test and Physical Fitness before he/she can be considered for admission.</p>
+       <br>
+       <h2>The National Diploma (ND) in Hydrology and Water Resources Management </h2>
+       <p> The National Diploma (ND) in Hydrology and Water Resources Management is aimed at producing diplomates with sound knowledge and skills to effectively manage the water resources potentials of the Nigerian economy. It would enable them acquire technological and professional skills necessary for employment and job creation in various areas of hydrology and water resources management, such as river basin development, watershed management, erosion and sedimentation control, urban drainage system management, aquatic plant and animal resources management, environmental resources and sanitation management, managing of hydro-power stations, environmental disaster and risks analysis amongst others.
+</p>
+<h3>PROGRAMME OBJECTIVES:</h3>
+<p>On completion of this course, the ND diplomates should be able to:</p>
+<ol>
+<li>Employ the operational knowledge involved in hydrological and water resources management in analysing sediment and water quality samples and computing sediment discharge and sediment yield from catchment reservoir sedimentation and water quality characteristics and studying effects of main pollutants</li>
+<li>Maintain data necessary in managing water projects such as dams, reservoir, underground and surface water resources;</li>
+<li>Apply basic principles of conventional/electronic instrumentation and computers and the basic principles of computer programming and data processing in the monitoring of public water supply and associated health risk mitigations;</li>
+<li>Predict geomorphological changes within the drainage basin system for decision making/ planning purposes;</li>
+<li>Maintaining data records, carrying out pre-processing and transmitting data in appropriate formats necessary in predicting and controlling flood risk, drought and disaster management;</li>
+<li>Operating and maintaining various types of equipments used for measuring meteorological and hydrological parameters as well as collecting data necessary for the design, construction and operations of hydrologic structures;</li>
+<li>Understand general aspects of ground water flow, ground water recharge and extraction including hydrological and water quality aspects, and assisting in carrying out pumping tests;</li>
+<li>Preparing water resources account of a river basin and;</li>
+<li>Maintain and manage gauging stations for stream flow measurements, handling equipments and observing stations using different techniques.
+</li>
+</ol>
+<br>
+<p><b>MINIMUM ENTRY REQUIREMENTS</b></p>
+<p>The academic requirements for admission into the ND Hydrology and Water Resources Management programme are:
+</p>
+<p>Five (5) credit GCE (O level), SSCE and NECO at not more than two sittings. The five subjects must include English Language, Mathematics, Physics or Geography and any other two Science subjects plus at least passes in Chemistry and Biology.
+</p>
+<p>Five credit passes in an NBTE recognized preliminary National Diploma course offered in a Polytechnic or similar post-secondary technical institution. The credit passes must include Mathematics, Geography and Physics
+</p>
+
+
+<h3>CAREER PROSPECTS</h3>
+<p>Hydrology, Water resources planning and management career opportunities are found with government agencies at the federal, state, and local levels; on the faculties of colleges and universities; in the private sector with environmental or engineering consultants, including civil engineering and environmental management and assessment companies; with environmental groups; and with companies that use significant water resources in their manufacturing or extracting processes.
+</p> </div></div></div>
+<div id="lastinfo">
+<p><b>Fees schedule for faculty of maritime transport and business studies:</b></p>         
+<div id="table">
+  <table >
+    <tr>
+      <th>S/NO</th>
+      <th>Maritime Transport & Business Management</th>
+      <th>School Fees</th>
+      <th>Acceptance Fee</th>
+      <th>Medicals</th>
+      <th>Uniform</th>
+      <th>Sub Total</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Business Logistics</td>
+      <td>250,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>878,000.00</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Maritime Law</td>
+      <td>450,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>528,000.00</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Maritime Management</td>
+      <td>200,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>278,000.00</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Marine Insurance</td>
+      <td>300,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>378,000.00</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Ports & Logistic Management</td>
+      <td>300,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>378,000.00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Maritime Consultant</td>
+      <td>200,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>278,000.00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Maritime Economics</td>
+      <td>300,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>378,000.00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Ship Chartering</td>
+      <td>300,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>378,000.00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Ship Operations</td>
+      <td>300,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>378,000.00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Shipbroker</td>
+      <td>30,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>358,000.00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Shipping Marketing</td>
+      <td>280,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>358,000.00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Maritime Safety Management</td>
+      <td>280,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>358,000.00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Maritime Telecommunications</td>
+      <td>380,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>458,000.00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Assistant Underwater Marine</td>
+      <td>300,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>378,000.00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Economic Globalization & Shipping</td>
+      <td>300,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>378,000.00</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Maritime Business Administration</td>
+      <td>280,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>358,000.00</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Hydrology</td>
+      <td>280,000.00</td>
+      <td>15,000.00</td>
+      <td>15,000.00</td>
+      <td>48,000.00</td>
+      <td>358,000.00</td>
+    </tr>
+  </table>
+  
+  
+</div>
+<br>
+<p><b>How to make payments:</b></p>
+<p>You can make payments online or manually</p>
+<p>To pay manually, make a transfer to the school account below and send proof of payment as well as your details to <strong>support@grafordcollege.com</strong></p>
+<strong> <p>Account Number:1229433888</p>
+<p>Account Name: GRAFORD COLLEGE OF MARITIME & AVIATION STUDIES</p> 
+
+<p>Bank: Zenith Bank PLC</p>
+</strong>
+          </div>
+    
+        
+    
+    
+        <div id="overfoot">
+            <footer>
+          <div style="display: flex;flex-direction: row;">
+            <div><img src="images/logo.jpg" alt="logo" width="80px"></div>
+            <div><h3 style="padding: 10px;">GRAF-COMAS</h3></div>
+          </div>
+          <hr>
+          <div id="foot">
+          <div>
+          <h3>ABOUT</h3>
+          <p><a href="about.html">About Us</a></p>
+          <p><a href="director.html">Director Profile</a></p>
+          </div>
+          
+           <div>
+            <h3>SCHOOLS</h3>
+          <p><a href="nautical.html">School Of Nautical Studies</a></p>
+           <p> <a href="aviation.html">School Of Aviation</a></p>
+            <p><a href="diving.html">School Of Diving</a></p>
+         <p><a href="engineering.html">School Of Engineering</a></p> 
+           <p><a href="maritime.html">School Of Maritime Transport & Business Technology</a></p> 
+           <p><a href="food-science.html">School Of Food Science</a></p> 
+             <p><a href="training.html">School Of Vocational Training/Rehabilitation</a></p> 
+           <p><a href="agriculture.html">School of Agriculture</a></p>
+           <p><a href="sciences.html">School of Sciences</a></p>
+          </div>
+          
+          <div>
+          <h3>INFORMATION CENTER</h3>
+          <p><a href="blog.php">News and Blog</a></p>
+          <p><a href="certificate.php">Certificate Verification</a></p>
+          <p><a href="alumni.php">Alumni page</a></p>
+          </div>
+          
+          <div>
+            <h3>CONTACT</h3>
+            <p><a style="color: white;text-decoration: none;" href="mailto:support@grafordcollege.com"><i class="fa fa-share-square-o"></i> support@grafordcollege.com</a></p>
+            <p><i class="fa fa-phone-square" ></i> +234 (0) 8067333223</p>
+            <p><i class="fa fa-phone-square" ></i> +234 (0) 8098883608</p>
+          </div>
+          </div>
+          <hr>
+          <div style="text-align: center;">
+            <p>©2023  GRAF-COMAS- All rights reserved</p>
+          </div>
+          </footer>
+          </div>
+            <script src="javascript.js"></script>
+         <script>
+      if (window.location.pathname.endsWith('.html')) {
+          var newUrl = window.location.pathname.slice(0, -5); // Remove .html extension
+          window.history.replaceState({}, document.title, newUrl); // Change the URL without reloading the page
+      }
+    </script>
+</body>
+        </html>
+    
+    
+    
+    

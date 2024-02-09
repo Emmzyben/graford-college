@@ -1,0 +1,421 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SCHOOL OF ENGINEERING</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+</head>
+    <body>
+      <header id="cover">
+        <div style="background-color: #0e0e8822;">
+             <div id="firstUp">
+               <div><p><i class="fa fa-phone-square"></i> +234 (0) 8067333223 <span id="sp"><i class="fa fa-phone-square"></i> +234 (0) 8098883608 </span></p></div>
+                <div style="text-align: right;"><p><a style="color: white;text-decoration: none;" href="mailto:support@grafordcollege.com"><i class="fa fa-share-square-o"></i> support@grafordcollege.com</a></p></div>
+             </div>
+               <div style="display: flex;flex-direction: row;">
+                   <span id="side"><img src="images/logo.jpg" alt="logo"  ></span>
+                    <span><h1>GRAFORD COLLEGE OF MARITIME & AVIATION STUDIES</h1></span>
+                   <span id="side" style="text-align:right;">
+                       <ul>
+                       <li><a href="register.php">REGISTER NOW!</a></li>
+                       <li><a href="contact.html">CONTACT US</a></li>
+                       </ul>
+                   </span>
+               </div>
+    
+              </div></header> 
+    
+            
+                 <div id="bg">
+                     <ul>
+                         <li><a href="index.html">HOME</a></li>
+                         <li class="nav-container">
+                           <span id="hoverer">ABOUT</span> 
+                            <ul id="dropdown">
+                             <li><a href="about.html">ABOUT US</a></li> 
+                             <li><a href="director.html">DIRECTOR PROFILE</a></li> 
+                             <li><a href="staff.php">STAFF</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-container">
+                           <span id="hoverer">SCHOOLS</span> 
+                            <ul id="dropdown" style="width: 300px;">
+                               <li><a href="nautical.html">SCHOOL OF NAUTICAL STUDIES</a></li>
+                               <li><a href="aviation.html">SCHOOL OF AVIATION</a></li>
+                               <li><a href="diving.html">SCHOOL OF DIVING</a></li>
+                               <li><a href="engineering.html">SCHOOL OF ENGINEERING</a></li>
+                               <li><a href="maritime.html">SCHOOL OF MARITIME TRANSPORT & BUSINESS TECHNOLOGY</a></li>
+                               <li><a href="food-science.html">SCHOOL OF FOOD SCIENCE</a></li>
+                               <li><a href="training.html">SCHOOL OF VOCATIONAL TRAINING/REHABILITATION</a></li>
+                           <li><a href="agriculture.html">SCHOOL OF AGRICULTURE</a></li>
+                           <li><a href="sciences.html">SCHOOL OF SCIENCES</a></li>
+                     
+                            </ul>
+                          </li>
+       
+                         <li class="nav-container">
+                            <span id="hoverer">PORTAL LOGIN</span> 
+                             <ul id="dropdown">
+                              <li><a href="admissions.php">ADMISSION PORTAL</a></li> 
+                              <li><a href="student.php">STUDENT PORTAL</a></li> 
+                             </ul>
+                           </li>
+                           <li class="nav-container" >
+                             <span id="hoverer">INFORMATION</span> 
+                              <ul id="dropdown">
+                                <li><a href="certificate.php">CERTIFICATE VERIFICATION</a></li> 
+                               <li><a href="alumni.php">ALUMNI</a></li> 
+                               <li><a href="blog.php">NEWS/BLOG</a></li>
+                              </ul>
+                            </li>
+                         <li><a href="study.php">STUDY CENTER</a></li>
+                     </ul>
+                 </div>
+         
+    
+           
+        <aside >
+            <div style="width: 20%;"><img src="images/logo.jpg" alt="logo" ></div>
+            <div style="text-align: center;padding-top: 15px;color: #090970;padding-left: 20px;"><h3>GRAF-COMAS</h3></div>
+            <div  id="span" onclick="openNav()" style="cursor: pointer;">&#9776;</div>
+        </aside>
+    
+    <nav>
+        <div id="mySidenav" class="sidenav">
+    
+          <img src="images/logo.jpg" alt="" id="img"><hr>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="director.html">Director Profile</a>
+          <a class="dropdown-item" onclick="toggleDropdown()" style="  background-color:#0e0e88;
+          color: #fff;">
+           Schools +
+              <div class="sub-menu1" style="display: none;transition: 0.5s;background-color: #d3e4ee;
+              color: #fff;">
+                <a href="nautical.html">School of Nautical Studies</a>
+                <a href="aviation.html">School Of Aviation</a>
+                <a href="diving.html"> School Of Diving </a>
+                <a href="engineering.html">School Of Engineering </a>
+                <a href="maritime.html">School Of Maritime Transport & Business Technology </a>
+                <a href="food-science.html">School Of Food Science</a>
+                <a href="training.html">School Of Vocational Training/Rehabilitation</a>
+                <a href="agriculture.html">School of Agriculture</a>
+                <a href="sciences.html">School of Sciences</a>
+              </div>
+            </a>
+         
+            <script>
+              function toggleDropdown() {
+                const subMenu = document.querySelector('.sub-menu1');
+                subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+              }
+            </script>
+          <a href="admissions.php">Admission Portal</a>
+          <a href="student.php">Student Portal</a>
+          <a href="staff.php">Staff Portal</a>
+          <a href="certificate.php">Certificate Verification</a>
+          <a href="alumni.php">Alumni</a>
+          <a href="study.php">Study Center</a>
+          <a href="blog.php">News/blog</a>
+          <a href="register.php">Register</a>
+          <a href="contact.html">Contact</a> 
+        </div>
+        <script>
+          
+    function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    
+      var open = false;
+    
+    function openNav() {
+        var sideNav = document.getElementById("mySidenav");
+        
+        if (sideNav.style.width === "0px" || sideNav.style.width === "") {
+            sideNav.style.width = "250px";
+            open = true;
+        } else {
+            sideNav.style.width = "0";
+            open = false;
+        }
+    }
+        </script>
+    </nav>
+    
+<img src="images/pic6.jpg" alt="" id="schools" style="object-fit: cover;">
+    
+    <div class="divide">
+      <div style="padding-left: 20px;padding-right: 20px;"  id="skull">
+        <div>
+            <h1>SCHOOL OF ENGINEERING</h1>
+          <h3>Departments in the faculty of engineering include:</h3>
+         <ul>
+         <li> Department of Marine Engineering</li> 
+         <li> Department of Civil Engineering</li>
+          <li>Department of Petroleum Engineering</li>
+          <li>Department of Petroleum and Gas Engineering</li>
+          <li>Department of Petrochemical Engineering</li>
+         <li> Department of Chemical Engineering</li>
+          <li>Department of Mechanical Engineering</li>
+         <li> Department of Electrical Engineering</li>
+         <li>Department of Computer science</li> 
+         </ul>
+        <br>
+
+<div id="imageDiv">
+  <img src="images/pic7.jpg" alt="">
+      <img src="images/picc10.jpg" alt="">
+</div>
+
+
+
+
+   <h2>MECHANICAL ENGINEERING</h2>       
+    <p> The National Diploma (ND) programme in Mechanical Engineering Technology is aimed at producing technicians with knowledge, skills and competencies to carry out installation, operation, troubleshooting and maintenance of mechanical and related systems, components and equipment for the public and private sectors of the economy.
+</p>               
+     <h3> On completion of ND Mechanical Engineering Technology programme, the diplomates should be able to:
+</h3>          
+<ol>
+      <li> Apply basic principles of Science and Mathematics to solve Engineering problems.</li>   
+      <li> Prepare and interpret engineering drawings of mechanical equipment, their components and systems;
+</li>          <li>Carry out machining, welding and fabrication operations.</li>  
+       <li>Assist in preparing CNC part programs and use CNC machines to make simple jobs as well as interface CAD/CAM machines.
+</li>      
+    <li> Produce and assemble machine components.</li>  
+        <li>Operate, maintain and service mechanical equipment safely.</li>  
+        <li> Prepare appropriate engineering report.</li> 
+        <li>Carry out plant installation and maintenance.</li>  
+         <li>Apply management principles in organising supervisory groups and in the arrangement of sequence of activities.
+</li>          <li> Set up and manage an enterprise.</li>
+        <li> Use computer and IT tools for creating document, making spreadsheet and presentation.</li> 
+         <li> Use software like AutoCAD and Solid Works to prepare drawings.</li>
+          
+      </ol>
+   <br>
+       <p> <b>MINIMUM ENTRY REQUIREMENTS</b></p>  
+         <p>Candidates for admission into the programme should have a minimum of:</p> 
+        <p>Senior Secondary School Certificate (SSSC) with credit passes in at least five subjects at not more than two sittings which must include English, Mathematics, Physics, Chemistry, and one other subject from
+          Biology, agricultural science, further mathematics, economics, statistics, technical drawing, auto-mechanics, metal work and other relevant subject.</p>  
+        <p>GCE ´O‟ Level or its equivalent (Teachers Grade II or Senior School Certificate) with credit passes in five relevant subjects as specified in 1 above.</p>  
+        <p> National Technical Certificate (NTC) with credit passes in Mathematics, Physics, Chemistry, English Language and in the Mechanical Trade areas.</p> 
+          
+        <h3>CAREER PROSPECTS</h3>  
+         <p>Most industries rely on a form of mechanical systems, and mechanical engineering is thought to be one of the most diverse of all engineering disciplines. Due to this, there are employment opportunities across several sectors.
+          Thanks to their dynamism, they can work in various industries including manufacturing, oil and gas, civil, electrical and in automobile industry which is their core aspect.
+</p> 
+<br>
+<h2>Marine Engineering Technology – National Diploma</h2>
+<p>A marine engineer is responsible for the operation, maintenance and repair of all major mechanical and engineered equipment onboard a ship.
+</p>
+<p>There are several mechanical systems that help in the operations of any vessel like the propulsion mechanics, electricity and power generation system, lubrication, fuel systems, water distillation, lighting and air conditioning system etc. These are all included in the technical responsibilities of a marine engineer.
+</p>
+<p>The National Diploma course in Marine Engineering is designed to train intending sea-going marine engineers that will mount various vessels from fishing trawlers to cargo vessels on local and international waters.
+</p>
+<p>The programme aims to impart the required theoretical knowledge and practical skill to students in areas such as Engineering Planning, Practice, Management, Operations, Trouble-shooting, Repairs and Maintenance of Marine Engineering Systems and Equipment suitable for technicians.
+</p>
+<p>The ND Marine Engineering syllabus offers a robust content in both theory and practical as required by the statutory regulatory agencies; The Nigeria Board for Technical Education (N.B.T.E)   and The Nigeria Maritime Administration and Safety Agency (NIMASA).
+</p>
+<p>The Programme is segmented into course-work, Project and Supervised Work Experience Schemes (SIWES), otherwise called cadetship in the Marine Field.
+</p>
+<p>The course-work and Project takes a minimum of two academic sessions and a maximum of three. And the cadetship takes last an additional one year, the maximum duration of the course is not to exceed five sessions.
+</p>
+
+
+<h3>Prospects</h3>
+<p>Prospects abound for students that have undergone training in Marine Engineering as they could be employed by Maritime Companies to work on ships, they can also work with the Nigerian Port Authorities, Dockyards. Ship yards, International oil Companies (IOCs), International Association of Classification Societies (IACS) and well as The Nigerian Navy.
+</p><br>
+<p><b>Admission Requirements</b></p>
+<p>Admission to the ND Marine Engineering programme is without JAMB</p>
+<p>Candidates are only required to have passed five (5) subjects at Ordinary Level of WAEC/NECO/GCE or NABTEB. The Required ‘O’ Level Subjects are English Language, Mathematics, Physics, Chemistry, and any one (1) from Further Mathematics, Technical Drawing, Biology/Agricultural Science and Geography.
+</p><br>
+
+<p onclick="drop()"><b>General entry Requirements <span id="direct"><i class="fa fa-caret-square-o-right"></i></span></b></p><br>
+          <div id="open" >
+          <p>Applicants must have:</p>
+          <ol>
+        <li> Five credit level passes in GCE “O” level, Senior Secondary School Certificate (SSCE), NECO and NABTEB at not more than two sittings. The five subjects must include:
+</li>   
+          <li>English Language, Mathematics, Physics and two other subjects chosen from the following:
+            Economics, Geography, Further Mathematics, Physics, Chemistry, Biology/Agricultural Science.
+            A Pass in Physics is compulsory for Computer Science.</li>    </ol>
+          </div>
+          <p><b>Screening/Aptitude Test:</b></p>
+          <p>Candidates are subjected to Screening Exercise/Aptitude Test by sitting for the Graf-Comas Admission and Matriculation Board Exam (GAMBE) and score above 150 which is the given cut off mark stipulated by the college as may from time to time be decided by the Management/Regulatory Authority. </p>
+          <p>Candidates must pass Medical Test and Physical Fitness before he/she can be considered for admission.</p>
+
+   </div></div></div>   
+   <div id="lastinfo"> 
+   <p><b>Fees schedule for faculty of Engineering:</b></p>
+<div id="table">
+  <table >
+    <tr>
+      <th>Course</th>
+      <th>School Fees</th>
+      <th>Acceptance Fee</th>
+      <th>Uniform</th>
+      <th>Medical</th>
+      <th>Sub Total</th>
+    </tr>
+    <tr>
+       
+      <td>Marine Engineering</td>
+      <td>450,000.00</td>
+      <td>15,00.00</td>
+      <td>48,000.00</td>
+      <td>15,000.00</td>
+      <td>428,000.00</td>
+    </tr>
+    <tr>
+       
+      <td>Civil Engineering</td>
+      <td>350,000.00</td>
+      <td>15,00.00</td>
+      <td>48,000.00</td>
+      <td>15,000.00</td>
+      <td>428,000.00</td>
+    </tr>
+    <tr>
+       
+      <td>Petroleum Engineering</td>
+      <td>700,000.00</td>
+      <td>15,00.00</td>
+      <td>48,000.00</td>
+      <td>15,000.00</td>
+      <td>778,000.00</td>
+    </tr>
+    <tr>
+       
+      <td>Petroleum and Gas Engineering</td>
+      <td>700,000.00</td>
+      <td>15,00.00</td>
+      <td>20,000.00</td>
+      <td>15,000.00</td>
+      <td>300,000.00</td>
+    </tr>
+    <tr>
+       
+      <td>Petrochemical Engineering</td>
+      <td>700,000.00</td>
+      <td>15,00.00</td>
+      <td>48,000.00</td>
+      <td>15,000.00</td>
+      <td>298,000.00</td>
+    </tr>
+    <tr>
+       
+      <td>Chemical Engineering</td>
+      <td>700,000.00</td>
+      <td>15,00.00</td>
+      <td>48,000.00</td>
+      <td>15,000.00</td>
+      <td>298,000.00</td>
+    </tr>
+    <tr>
+       
+      <td>Mechanical Engineering</td>
+      <td>300,000.00</td>
+      <td>15,00.00</td>
+      <td>48,000.00</td>
+      <td>15,000.00</td>
+      <td>378,000.00</td>
+    </tr>
+    <tr>
+       
+      <td>Electrical Engineering</td>
+      <td>285,000.00</td>
+      <td>15,00.00</td>
+      <td>48,000.00</td>
+      <td>15,000.00</td>
+      <td>363,000.00</td>
+    </tr>
+    <tr>
+       
+      <td>Computer Engineering</td>
+      <td>280,000.00</td>
+      <td>15,00.00</td>
+      <td>48,000.00</td>
+      <td>15,000.00</td>
+      <td>358,000.00</td>
+    </tr>
+  </table>
+  
+</div>
+
+
+          <p><b>How to make payments:</b></p>
+          <p>You can make payments online or manually</p>
+          <p>To pay manually, make a transfer to the school account below and send proof of payment as well as your details to <strong>support@grafordcollege.com</strong></p>
+        <strong> <p>Account Number:1229433888</p>
+         <p>Account Name: GRAFORD COLLEGE OF MARITIME & AVIATION STUDIES</p> 
+          
+          <p>Bank: Zenith Bank PLC</p>
+       </strong></div>     
+
+       
+     
+    
+        <div id="overfoot">
+            <footer>
+          <div style="display: flex;flex-direction: row;">
+            <div><img src="images/logo.jpg" alt="logo" width="80px"></div>
+            <div><h3 style="padding: 10px;">GRAF-COMAS</h3></div>
+          </div>
+          <hr>
+          <div id="foot">
+          <div>
+          <h3>ABOUT</h3>
+          <p><a href="about.html">About Us</a></p>
+          <p><a href="director.html">Director Profile</a></p>
+          </div>
+          
+           <div>
+            <h3>SCHOOLS</h3>
+          <p><a href="nautical.html">School Of Nautical Studies</a></p>
+           <p> <a href="aviation.html">School Of Aviation</a></p>
+            <p><a href="diving.html">School Of Diving</a></p>
+           <p><a href="engineering.html">School Of Engineering</a></p> 
+           <p><a href="maritime.html">School Of Maritime Transport & Business Technology</a></p> 
+           <p><a href="food-science.html">School Of Food Science</a></p> 
+             <p><a href="training.html">School Of Vocational Training/Rehabilitation</a></p> 
+           <p><a href="agriculture.html">School of Agriculture</a></p>
+           <p><a href="sciences.html">School of Sciences</a></p>
+          </div>
+          
+          <div>
+          <h3>INFORMATION CENTER</h3>
+          <p><a href="blog.php">News and Blog</a></p>
+          <p><a href="certificate.php">Certificate Verification</a></p>
+          <p><a href="alumni.php">Alumni page</a></p>
+          </div>
+          
+          <div>
+            <h3>CONTACT</h3>
+            <p><a style="color: white;text-decoration: none;" href="mailto:support@grafordcollege.com"><i class="fa fa-share-square-o"></i> support@grafordcollege.com</a></p>
+            <p><i class="fa fa-phone-square" ></i> +234 (0) 8067333223</p>
+            <p><i class="fa fa-phone-square" ></i> +234 (0) 8098883608</p>
+          </div>
+          </div>
+          <hr>
+          <div style="text-align: center;">
+            <p>©2023  GRAF-COMAS- All rights reserved</p>
+          </div>
+          </footer>
+          </div>
+            <script src="javascript.js"></script>
+         <script>
+      if (window.location.pathname.endsWith('.html')) {
+          var newUrl = window.location.pathname.slice(0, -5); // Remove .html extension
+          window.history.replaceState({}, document.title, newUrl); // Change the URL without reloading the page
+      }
+    </script>
+</body>
+        </html>
+    
+    
+    
+    
