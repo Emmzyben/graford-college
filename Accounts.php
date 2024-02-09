@@ -8,74 +8,8 @@ if (!isset($_SESSION['Matnumber'])) {
     exit();
 }
 
-?>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="images/logo.jpg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Student Dashboard</title>
-    <link rel="stylesheet" href="student.css">
-<!-- Included Flutterwave JavaScript Library -->
-<script src="https://checkout.flutterwave.com/v3.js"></script>
-<script>
-  function Payment() {
-    FlutterwaveCheckout({
-      public_key: publicKey,
-      tx_ref: transactionRef,
-      amount: amount,
-      paymentType:paymenttype,
-      currency: "NGN",
-      payment_options: "card, banktransfer, ussd",
-      meta: {
-        source: "docs-inline-test",
-        consumer_mac: "92a3-912ba-1192a",
-      },
-      customer: {
-        email: customerEmail,
-        phone_number: phoneNumber,
-        name: customerName,
-      },
-      customizations: {
-        title: "Graford college",
-        description: "One-time registration fee",
-        logo: "https://checkout.flutterwave.com/assets/img/rave-logo.png",
-      },
-      callback: function(response) {
-        // Check if payment is successful
-        if (response.status === "successful") {
-          // Call notify.php upon successful payment
-          var notifyXhr = new XMLHttpRequest();
-          notifyXhr.open("POST", "update.php", true);
-          notifyXhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-          notifyXhr.onreadystatechange = function() {
-            if (notifyXhr.readyState === 4 && notifyXhr.status === 200) {
-              alert("Payment Successful");
-            }
-          };
-          notifyXhr.send("email=" + encodeURIComponent(customerEmail));
-        } else {
-          alert('Payment unsuccessful')
-        }
-      },
-      onclose: function(incomplete) {
-        if (incomplete === true) {
-         alert('Payment unsuccessful')
-         }
-        }
-      }
-    });
-  }
-</script>
 
 
-<style>
-  .course-info {
-    display: none;
-    color: red;
-  }
-</style>
-<?php
 $DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'grafordc_graford';
 $DATABASE_PASS = 'Gratia12345';
@@ -133,41 +67,88 @@ if ($stmt->fetch()) {
         'created_at' => $created_at
     );
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Form is submitted
-        // Retrieve values from the form
-        $paymentType = $_POST['payment_type'];
-        $amount = $_POST['amount'];
-
-
-        // Generate transactionRef and escape special characters
-        $transactionRef = 'txref-' . generateRandomString() . '-' . time();
-        $customerName = htmlspecialchars($accounts['fullName'], ENT_QUOTES, 'UTF-8');
-        $customerEmail = htmlspecialchars($accounts['email'], ENT_QUOTES, 'UTF-8');
-        $phoneNumber = htmlspecialchars($accounts['phone'], ENT_QUOTES, 'UTF-8');
-        $publicKey = htmlspecialchars($publicKey, ENT_QUOTES, 'UTF-8');
-
-        // Output JavaScript script
-        echo '<script>
-            var customerName = "' . $customerName . '";
-            var customerEmail = "' . $customerEmail . '";
-            var phoneNumber = "' . $phoneNumber . '";
-            var publicKey = "' . $publicKey . '";
-            var amount = "' . $amount . '";
-            var paymenttype = "' . $paymentType . '";
-            var transactionRef = "' . $transactionRef . '";
-            if (typeof Payment === "function") {
-                Payment();
-            } else {
-                console.error("Payment function is not defined");
-            }
-        </script>';
-    }
+    
 } else {
     $errorMessage .= 'Failed to fetch account information from the database. ';
 }
 $stmt->close();
 ?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Student Dashboard</title>
+    <link rel="stylesheet" href="student.css">
+<!-- Included Flutterwave JavaScript Library -->
+<script src="https://checkout.flutterwave.com/v3.js"></script>
+<script>
+  function Payment(paymentType, amount) {
+    // Use the PHP variables in the JavaScript code
+    var publicKey = '<?php echo $publicKey; ?>';
+    var transactionRef = '<?php echo generateRandomString(); ?>';
+    var customerEmail = '<?php echo $accounts['email']; ?>';
+    var phoneNumber = '<?php echo $accounts['phone']; ?>';
+    var customerName = '<?php echo $accounts['fullName']; ?>';
+
+    FlutterwaveCheckout({
+      public_key: publicKey,
+      tx_ref: transactionRef,
+      amount: amount,
+      paymentType: paymentType,
+      currency: "NGN",
+      payment_options: "card, banktransfer, ussd",
+      meta: {
+        source: "docs-inline-test",
+        consumer_mac: "92a3-912ba-1192a",
+      },
+      customer: {
+        email: customerEmail,
+        phone_number: phoneNumber,
+        name: customerName,
+      },
+      customizations: {
+        title: "Graford college",
+        description: "One-time registration fee",
+        logo: "https://checkout.flutterwave.com/assets/img/rave-logo.png",
+      },
+      callback: function(response) {
+if (response.status === "successful") {
+    // Call update.php upon successful payment
+    var notifyXhr = new XMLHttpRequest();
+    notifyXhr.open("POST", "update.php", true);
+    notifyXhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    
+    // Construct the data to send in the POST request
+    var postData = "email=" + encodeURIComponent(customerEmail) +
+                    "&amount=" + encodeURIComponent(amount) +
+                    "&paymentType=" + encodeURIComponent(paymentType);
+
+    notifyXhr.onreadystatechange = function () {
+        if (notifyXhr.readyState === 4) {
+            if (notifyXhr.status === 200) {
+                alert("Payment Successful");
+            } else {
+                alert("Error updating data. Please contact support.");
+            }
+        }
+    };
+    
+    // Send the POST request with the constructed data
+    notifyXhr.send(postData);
+} else {
+    alert('Payment unsuccessful');
+}
+
+      },
+      onclose: function(incomplete) {
+        if (incomplete === true) {
+         alert('Payment unsuccessful')
+         }
+      }
+    });
+  }
+</script>
 
 </head>
 <body>
@@ -259,17 +240,33 @@ if (!empty($accounts)) {
     echo '<p>Error: ' . $errorMessage . '</p>';
 }?>
             </span></h3>
-           
-            <form action="" method='post'>
-                <select name="payment_type" id="">
-                  <option value="">Select payment type</option>
-                  <option value="Full payment">Full payment</option>
-                  <option value="Half payment">Half payment</option>
-                </select><br>
-                <input type="number" placeholder="Enter Amount" name="amount"><br>
-                <button type='submit' style="background-color: coral;padding: 7px;
-            color: white;font-size: 15px;border: 0px solid black;">Proceed to payment</button>
-            </form>
+<script>
+       function makePayment() {
+        var paymentType = document.getElementById('payment_type').value;
+        var amount = document.getElementById('amount').value;
+
+        // Validate the form fields
+        if (paymentType === '' || amount === '') {
+            alert('Please select payment type and enter amount.');
+            return false; // Prevent form submission
+        }
+
+        // Pass the values to the Payment function
+        Payment(paymentType, amount);
+
+        return false; // Prevent form submission
+    }
+</script>   
+         <form onsubmit="return makePayment()">
+    <select name="payment_type" id="payment_type">
+        <option value="">Select payment type</option>
+        <option value="Full payment">Full payment</option>
+        <option value="Half payment">Half payment</option>
+    </select><br>
+    <input type="number" placeholder="Enter Amount" name="amount" id="amount"><br>
+    <button type='submit' style="background-color: coral;padding: 7px;
+        color: white;font-size: 15px;border: 0px solid black;" id="start-payment-button">Proceed to payment</button>
+</form>
             
         </div>  
         <div>
@@ -279,11 +276,5 @@ if (!empty($accounts)) {
 
 
 </main>
- <script>
-      if (window.location.pathname.endsWith('.html')) {
-          var newUrl = window.location.pathname.slice(0, -5); // Remove .html extension
-          window.history.replaceState({}, document.title, newUrl); // Change the URL without reloading the page
-      }
-    </script>
 </body>
 </html>

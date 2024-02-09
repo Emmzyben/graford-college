@@ -730,11 +730,5 @@ By proceeding you agree to pay a non-refundable fee of #25,000 only for Registra
 
 <script src="select.js"></script>
     <script src="javascript.js"></script>
- <script>
-      if (window.location.pathname.endsWith('.html')) {
-          var newUrl = window.location.pathname.slice(0, -5); // Remove .html extension
-          window.history.replaceState({}, document.title, newUrl); // Change the URL without reloading the page
-      }
-    </script>
 </body>
 </html>

@@ -184,3 +184,14 @@ Stack trace:
 [08-Feb-2024 21:04:58 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
 [08-Feb-2024 21:24:43 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/grafordc/public_html/Accounts.php on line 63
 [08-Feb-2024 21:24:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/grafordc/public_html/Accounts.php:1) in /home/grafordc/public_html/Accounts.php on line 66
+[09-Feb-2024 14:19:07 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[09-Feb-2024 15:19:04 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[09-Feb-2024 15:31:08 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/grafordc/public_html/update.php on line 8
+[09-Feb-2024 15:31:23 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[09-Feb-2024 15:41:01 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/grafordc/public_html/update.php on line 8
+[09-Feb-2024 15:41:41 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[09-Feb-2024 15:46:18 UTC] PHP Warning:  Undefined array key 0 in /home/grafordc/public_html/overview1.php on line 143
+[09-Feb-2024 15:59:56 UTC] PHP Warning:  Undefined variable $errorMessage in /home/grafordc/public_html/password_reset.php on line 265
+[09-Feb-2024 15:59:56 UTC] PHP Warning:  Undefined variable $errorMessage in /home/grafordc/public_html/password_reset.php on line 266
+[09-Feb-2024 15:59:56 UTC] PHP Warning:  Undefined variable $successMessage in /home/grafordc/public_html/password_reset.php on line 269
+[09-Feb-2024 15:59:56 UTC] PHP Warning:  Undefined variable $successMessage in /home/grafordc/public_html/password_reset.php on line 270

@@ -152,11 +152,5 @@ $con->close();
 </main>
 
 
- <script>
-      if (window.location.pathname.endsWith('.html')) {
-          var newUrl = window.location.pathname.slice(0, -5); // Remove .html extension
-          window.history.replaceState({}, document.title, newUrl); // Change the URL without reloading the page
-      }
-    </script>
 </body>
 </html>
